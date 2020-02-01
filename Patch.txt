@@ -1,0 +1,2635 @@
+﻿--------------------------------------------------------------------------
+  WARCRAFT III: THE FROZEN THRONE VERSION HISTORY
+--------------------------------------------------------------------------
+
+--------------------------------------------------------------------------
+Patch 1.26
+--------------------------------------------------------------------------
+
+FIXES
+
+- Hex will no longer provide a speed boost to a Hero if cast at the end of
+  Metamorphosis or Chemical Rage effects.
+- Reverted the fix "Hex will no longer extend the duration of Metamorphosis."
+- Fixed an issue where some Mac patches could lead to disconnections during
+  Battle.net games. 
+
+--------------------------------------------------------------------------
+Patch 1.25b
+--------------------------------------------------------------------------
+
+FIXES
+
+- Fixed an issue where players were able to ally with opponents when
+  alliances were locked ("share hack").
+- A gold exploit with buildings has been fixed.
+- Widescreen (stretched) resolutions should now be available in the Video options.
+- Scroll of Town Portal will no longer be consumed when casting fails
+  when used at the same time that your Hero is Hexed.
+- You can now purchase items from shops while Hexed.
+- Hex will no longer extend the duration of Metamorphosis.
+- Hex will no longer disable mana or health regeneration of Heroes.
+- Wisps Detonate ability will no longer drain mana from Heroes while under
+  the effects of Potion of Invulnerability.
+- Warcraft III will now write its registry keys on launch.
+
+
+BALANCE CHANGES
+
+Humans
+- Improved Masonry Upgrade health boost decreased from 20% to 10% for all 3 levels
+- Siege Engine Level increased from 2 to 3
+- Rifleman HP increased from 505 to 535
+
+Orcs
+- Blade master Wind Walk duration reduced from 20/40/60 to 20/35/50
+- Raider Ensnare Cooldown increased from 12 to 16
+- Spirit Wolf Rank 1 Wolf Level decreased from 3 to 2
+
+Night Elves
+- Warden Shadow Strike mana cost increased from 65 to 75
+- Druid of the Talon Faerie Fire duration decreased from 120 to 90
+
+Items
+- Ivory Tower gold cost increased from 30 to 40.
+- Tome of Experience now gives Heroes 100 experience points, down from 150
+- Orb of Venom poison duration decreased from 8 to 6
+
+NOTE: Replays are incompatible between major game revisions. (1.24e replays 
+cannot be viewed with the 1.25 version of Warcraft III.)
+
+--------------------------------------------------------------------------
+Patch 1.25 (PTR)
+--------------------------------------------------------------------------
+
+--------------------------------------------------------------------------
+Patch 1.24e
+--------------------------------------------------------------------------
+
+FIXES
+
+- Fixed an exploit rendering buildings non-interactable ("tower hack"). 
+- Fixed an exploit allowing a player to bypass a summon ability's 
+cooldown ("summon/cooldown hack"). 
+- Fixed a client crash related to workers failing to build in an 
+unintended way ("new crash hack"). 
+- Fixed an exploit allowing the Blood Mages's Phoenix to be resurrected 
+instantly ("phoenix hack"). 
+- Fixed a bug allowing players to select an invalid matchmaking race 
+resulting in all the player's units and buildings becoming sheep 
+("sheep hack").
+
+--------------------------------------------------------------------------
+Patch 1.24d
+--------------------------------------------------------------------------
+
+FIXES
+
+- Fixed a client crash related to queuing too many invalid build commands
+  ("crash hack").
+
+--------------------------------------------------------------------------
+Patch 1.24c
+--------------------------------------------------------------------------
+
+FIXES
+
+- Fixed a problem with the "Chapter Six: The Culling" human campaign map
+  that was preventing it from loading.
+- Fixed an issue that allowed JASS functions to return incorrect values
+  under certain conditions.
+- Fixed an issue that caused the TriggerEvaluate native to return 
+  incorrect values under certain conditions.
+- Fixed a minor memory leak when using GroupEnum natives.
+- Fixed a crash when using the CreateImage native on PPC Mac.
+- Updated Mac World Editor to work with recent JASS changes.
+
+--------------------------------------------------------------------------
+Patch 1.24b
+--------------------------------------------------------------------------
+
+PC WORLD EDITOR CHANGES
+
+- Increased max map file size from 4 MB to 8 MB.
+- Added the ability to store hashtable handles in a hashtable.
+- Added GetSpellTargetX and GetSpellTargetY natives.
+- Added a new base handle type “Agent” of which many types now extend from.
+- Added a SaveAgentHandle native which can be used for saving most handle types.
+- Added a JASS optimization dealing with global variable change events.
+
+FIXES
+
+- Fixed a few false positives caused by the "return bug" fix.
+- Fixed a crash related to hashtable reference counting.
+- “Shadowing” global variables with local variables no longer is possible.
+- Fixed a type conversion dealing with operators (i.e. adding a handle with an integer).
+
+--------------------------------------------------------------------------
+Patch 1.24
+--------------------------------------------------------------------------
+
+PC WORLD EDITOR CHANGES
+
+- Added new JASS hash table functions to replace the lost functionality from 
+   fixing unsafe type casting.
+   - Hash Table - Save Item Handle
+   - Hash Table - Save Unit Handle
+   - ...
+   - Hash Table - Load Item Handle
+   - Hash Table - Load Unit Handle
+   - ...
+   - Hash Table - Get Handle ID
+
+FIXES
+
+- Fixed an exploit related to unsafe type casting that allowed users to 
+   execute arbitrary code in maps.
+- Fixed the JASS unsafe type casting exploit ("return bug").
+- Fixed several World Editor crashes.
+
+--------------------------------------------------------------------------
+Patch 1.23
+--------------------------------------------------------------------------
+
+FEATURES
+
+- Battle.net now uses a new banner ad system. 
+
+FIXES
+
+- Fixed an exploit where an altered custom map would be seen identical to
+   the original custom map.
+- Fixed an issue where some patches could not apply on Intel Macs. 
+
+--------------------------------------------------------------------------
+Patch 1.22
+--------------------------------------------------------------------------
+
+FEATURES
+
+- There is now a replay auto-save feature in the options menu. Replays
+   are automatically saved to the "replay" folder.
+- The game is now automatically saved in the event of a potential
+   disconnect. These saved games are placed in the "save" folder.
+- Player color selection can now be limited by the number of players in 
+   the game using an option in the "Advanced Options" screen during game
+   creation.
+- Added an option to always show unit and building health bars.
+- You can now enable and disable the display of minimap signals
+   from players and other observers using chat commands: 
+   /showminimapsignals and /hideminimapsignals.
+- Added a new in-game cheat "maxfps" to limit the maximum frame rate to
+   the given number. Example: "maxfps 30" will set the maximum frame rate
+   to 30 FPS.
+
+BALANCE CHANGES
+
+HUMAN
+- Scout Tower repair rate changed from 12 to 20.
+- Knight damage increased: Attack cooldown changed from 1.50 to
+   1.40 and base damage increased from 25 to 28 (Average damage is 34).
+
+UNDEAD
+- Increased Ziggurat base armor from 1 to 5.
+- Reduced the build time of the Necropolis from 120 to 100.
+
+NIGHT ELF
+- Reduce the Orb of venom poison duration from 10 seconds to 8 seconds.
+- Increase the experience gain from Dryads from Level 2 (40xp) to 
+   Level 3 (60 xp).
+
+FIXES
+
+- The cooldown on unlimited usable items (example: the staff of 
+   preservation) now persists after the item is dropped or traded.
+- A cooldown exploit with potions has been fixed.
+- When you unburrow a Crypt Fiend, its auto-cast will no longer be toggled
+   off.
+- An exploit bug in which items could lose their cooldowns when transferred
+   between heroes has been fixed.
+- Fixed DotA-specific sound effects on Intel Macs.
+- Fixed sound falloff on Intel Macs. Distant sounds should now still be
+  audible.
+
+MAPS
+
+- New maps from contest winners:
+ - (2)MeltingValley
+ - (2)RoadToStratholme
+ - (4)CentaurGrove
+ - (4)TidewaterGlades
+
+--------------------------------------------------------------------------
+Patch 1.21b
+--------------------------------------------------------------------------
+
+FEATURES
+
+- The game no longer requires the CD to play.
+
+--------------------------------------------------------------------------
+Patch 1.21
+--------------------------------------------------------------------------
+
+FEATURES
+
+- The game now runs natively on both PowerPC-based and Intel-based Macs.
+- Player can now view frames per second using the "/fps" chat command.
+
+FIXES
+
+- Fixed a timing problem with the game on PCs with dual-core CPUs.
+- Fixed a crash that could occur with the Frost Breath ability.
+- Fixed a crash that could happen in multiplayer games.
+- Fixed an exploit that could happen in multiplayer games.
+
+Important Note on Patching for Mac Players: The file layout inside the
+game folder is changed significantly by Patch 1.21.  As a result, in order
+to be able to install the Frozen Throne expansion from CD, you must
+install Reign of Chaos first, then install Frozen Throne from CD, and then
+patch to version 1.21, in that order.  If you patch to v1.21 and then
+attempt to install Frozen Throne after that, it will not install
+correctly.
+
+MAPS
+
+- New maps:
+  - (2)SecretValley
+  - (6)BomberCommand
+- (4)LostTemple (RoC)
+  - The 4 Forest Troll Berserkers by the natural expansions now drop Level
+    2 Permanent instead of Level 2 Charged items
+- (4)TurtleRock
+  - The 4 Ogre Warriors along the outer pathways now drop Level 2
+    Permanent instead of Level 2 Charged items
+- (6)GnollWood
+  - The 4 Gnoll Brutes by the central Item Shops now drop Level 2
+    Permanent instead of Level 2 Charged items
+
+--------------------------------------------------------------------------
+Patch 1.20e
+--------------------------------------------------------------------------
+
+FIXES
+
+- Fixed an exploit that could happen in multiplayer games.
+
+MAPS
+
+- Replays saved with older versions of a map are no longer compatible.
+
+- (2)TerenasStand
+   - Added some trees to high ground above Red start location to prevent
+     a siege unit attack imbalance.
+   - Replaced Mercenary Camp type from Village to Lordaeron Summer.
+
+--------------------------------------------------------------------------
+Patch 1.20d
+--------------------------------------------------------------------------
+
+FIXES
+
+- Fixed an exploit that could happen in multiplayer games.
+
+--------------------------------------------------------------------------
+Patch 1.20c
+--------------------------------------------------------------------------
+
+FIXES
+
+- Fixed a crash that could happen in multiplayer games.
+
+--------------------------------------------------------------------------
+Patch 1.20b
+--------------------------------------------------------------------------
+
+FIXES
+
+- Fixed a crash that could happen in multiplayer games.
+
+--------------------------------------------------------------------------
+Patch 1.20
+--------------------------------------------------------------------------
+
+BUG FIXES
+
+- Fixed a Bug that disabled Spirit Walkers from resurrecting other Spirit 
+  Walkers.
+
+MAPS
+
+- (6)WizardsRetreat
+   - separated two creep camps near both corner starting locations to
+     prevent them from calling each other for help when one is attacked.  
+
+- (6)Gnollwood
+   - separated two creep camps near merchant buildings to prevent them from 
+     calling each other for help when one is attacked.  
+
+- (6)BlizzardTD 
+   - Fixed phase-shifting units to behave normally when attacked. 
+ 
+- (12)WormWar 
+   - Fixed a bug that causes player worms to become immobile after using
+     powerups while respawning.
+
+--------------------------------------------------------------------------
+Patch 1.19b
+--------------------------------------------------------------------------
+
+FIXES
+
+- Fixed a crash that could happen in multiplayer games.
+
+--------------------------------------------------------------------------
+Patch 1.19
+--------------------------------------------------------------------------
+
+MAPS
+
+- (2)Echo Isles  
+   - Added ranged creep to expansion goldmines. 
+   - Replaced both Fountains of Health with Mercenary camps and changed 
+      the creep composition so that they're not all piercing attack.
+   - Replaced the mana fountain with a Market Place and changed the level
+     3 perm item drops to level 3 charged items.
+   - Replaced one Troll Trapper with an equal level Ogre to the all troll
+     trapper green camp next to each start location.
+
+- (2)Tirisfal Glade 
+   - Added a tavern to each side of the map, reduced the level of the creep 
+     that guard the Mercenary buildings as well as the level of the items 
+     they drop, and reduced two Orange  creep camps and level of the item 
+     drops.
+
+- (4)Turtle Rock 
+   - Opened areas of the map to help alleviate strong choke points that 
+     favor ranged unit combat. 
+
+- (4)Broken Shard  
+   - Replaced the 4 center orange camps with 4 green camps.
+   - Replaced two ranged units with two melee units to the creep camps
+     guarding the Goblin Merchants.
+   - Increased the Orange camp levels near each start location and added
+     an additional item to each of those camps.
+
+- (4)Hellfire 
+   - Reduced the creep level on the two middle Red creep camps.
+   - Reduced the creep level on the East and West Goblin Laboratory creep
+     camps.
+
+- (4)Stonecold Mountain 
+   - All creep with the ability to possess units have been removed from
+     this map.
+
+- (4)Lost Temple 
+   - Added a few trees to all the start locations to ensure better 
+     balance of lumber harvesting for all races.
+
+- (4)Twisted Meadows  
+   - Changed the level 4 charged item drops at the Goblin Merchant to 
+     level 4 permanent drops.
+
+- (6)Sunrock Cove 
+   - Added pathing room around Goblin Laboratory and removed the clump of
+     trees in front of the Goblin Laboratory to enhance game play.
+   - Lowered the goldmine creep camp from Red to Green
+   - Pushed Blue's West ramp further from its start location.
+
+- (6)GnollWood  
+   - Removed all Gnoll Assassins from the Goblin Merchant creep camps, 
+     replaced with Gnoll Brutes. 
+
+- (6)Typhoon
+   - Fixed Red and Teal start locations to be closer to the goldmines 
+     like the other start locations.
+
+- (6)Silverpine Forest 
+   - Removed the Tavern from all start locations
+   - Can now path across the center of the map, added a Tavern to the 
+     center of the map.
+   - Reduced the Item and creep levels of the 4 Red camps in the center
+     of the map.
+   - The 6 center goldmines have been reduced in difficulty of creep 
+     camps.
+
+- (6)Dragonblight  
+   - The two center creep camps have been pushed away from pathable area
+     to prevent accidental attacks.
+   - The players alliance settings have been changed to favor 2v2.
+
+- (6)Moonglade  New Map File
+   - Two center creep camps and buildings have been removed.
+   - Added two taverns to the center of the map.
+   - Opened up all chokepoints
+   - Added some trees to all start locations to help harvesting.
+
+- (6)Everfrost 
+   - Added a few trees to Yellow and Teal start locations to ensure 
+     lumber harvesting balance.
+   - Added ground Anti-Air units to the East and West Red creep camps.
+
+  
+- Bonus Maps Added to Battle.net
+  - (2)Shrine of the Ancients
+  - (2)Terenas Stand
+  - (4)Phantom Grove
+  - (4)Deathrose
+  - (6)Everfrost
+  - (6)Sunrock Cove
+  - (6)Emerald Shores
+  - (6)Duststorm
+  - (8)Full Scale Assault
+  - (8)Hurricane Isle
+  - (8)Cherryville
+  - (10)Skibis Castle TD
+  - (12)Worm War 
+  
+
+BALANCE CHANGES
+
+Items
+- Creep-dropped item sell prices have been standardized.  Items of the
+   same level will now generally sell for the same amount. 
+ 
+Undead
+- Skeletal Mastery research time reduced to 30 seconds from 45 seconds. 
+- Skeletal Longevity research time reduced to 15 seconds from 30 seconds. 
+- Exhume Corpses research now costs 75 gold / 50 lumber down from 125 
+   gold/ 100 lumber.
+- Destroyer armor reduced to 3 from 4.
+ 
+Orc
+- Spiritwalkers now have the passive Resistant Skin ability.  This 
+   causes some spells such as Cyclone and Slow to have a much shorter 
+   duration when used on a Spiritwalker.  Resistant skin also grants 
+   immunity to certain other spells such as Polymorph and Possession. 
+- Ensnare duration reduced from 15 seconds to 12 seconds.
+- Batrider hit points reduced to 325 from 400. 
+  
+Night Elf
+- Tree of Life build time increased to 120 seconds from 110 seconds. 
+ 
+Human
+- Human Towers (Guard, Cannon, Arcane and Scout) now gain 1 armor per
+   masonry upgrade, down from 2. 
+  
+
+  
+WORLD EDITOR CHANGES
+
+Trigger Editor
+- The "Image" category and actions now appear after the "Item" category.
+- The "Ubersplat" category and actions now appear after the "Unit Group"
+   category.
+- Fixed script generation errors when using the "Terrain Pathing Is Off" 
+   function.  This is now a Boolean function.
+- Fixed script generation errors when using variables of the following 
+   types:
+    - Attack Type
+    - Combat Sound
+    - Damage Type
+    - Effect Type
+    - Pathing Type
+    - Sound Type
+- Sorted lightning type presets.
+- Appended "Cliff" to cliff terrain types, to distinguish them from 
+   non-cliff terrain types.
+- Renamed "Life Drain" and "Mana Drain" to "Drain Life" and "Drain Mana",
+   respectively.
+- Cleaned up the name, grammar text, hints and/or sorting order for the
+   following trigger functions/calls:
+    - (Boolean) Environment - Terrain Pathing Is Off  (was Terrain 
+      Pathable)
+    - (Unit) Event Response - Damage Source
+    - (String) Game - Ability Name
+    - (String) Game - Ability Effect Art Path  (was Ability Effect Art)
+    - (String) Game - Ability Effect Sound Name  (was Ability Sound)
+    - (String) Hero - Hero Proper Name
+    - (String) Trigger - Trigger Name
+    - (Real) Lightning - Red Color of Lightning
+    - (Real) Lightning - Green Color of Lightning
+    - (Real) Lightning - Blue Color of Lightning
+    - (Real) Lightning - Alpha Value of Lightning  (was Alpha Color of 
+       Lightning)
+- Cleaned up the name, grammar text, hints and/or sorting order for the 
+    following trigger actions:
+    - Environment - Change Terrain Type
+    - Environment - Turn Terrain Pathing On/Off  (was Turn Pathing 
+      On/Off)
+    - Floating Text - Suspend/Resume
+    - Floating Text - Permanent/Expires
+    - Floating Text - Change Color
+    - Floating Text - Change Lifespan
+    - Floating Text - Change Fading Age  (was Change Fadepoint)
+    - Floating Text - Change Age
+    - Game - Enable/Disable Selection  (was Enable/Disable Select)
+    - Game - Enable/Disable Drag-Selection  (was Enable/Disable Drag 
+      Select)
+    - Game - Enable/Disable Pre-Selection  (was Enable/Disable Pre 
+      Select)
+    - Image - Create
+    - Image - Change Color
+    - Image - Change Render State
+    - Image - Change Render Always State
+    - Image - Change Above Water State
+    - Lightning - Create Lightning Effect  (was Create Lightning Effect 
+      At Points)
+    - Lightning - Move Lightning Effect  (was Move Lightning Effect To
+      Points)
+    - Lightning - Set Lightning Effect Color
+    - Unit - Add Classification
+    - Unit - Remove Classification
+    - Unit - Issue Drop Item Order  (was Drop Item On A Point)
+    - Unit - Issue Move Item In Inventory Order  (was Drop Item In Slot)
+    - Unit - Issue Give Item Order  (was Drop Item On A Unit)
+    - Unit - Damage Area
+    - Unit - Damage Target
+    - Unit - Decrease Level Of Ability For Unit
+    - Unit - Increase Level Of Ability For Unit
+    - Unit - Set Level Of Ability For Unit
+    - Ubersplat - Create
+    - Ubersplat - Change Render State
+    - Ubersplat - Change Render Always State
+- Added an event and three new trigger functions for future tournament
+   support:
+    - (Trigger Event) Tournament Event
+    - (Real) Tournament Time Remaining
+    - (Integer) Tournament Melee Score
+    - (Integer) Tournament Finish Rule
+
+--------------------------------------------------------------------------
+- PATCH 1.18
+--------------------------------------------------------------------------
+
+FEATURES
+
+- 6 maps from our Bonus Map program including (4)Excavation Site, (2)Echo
+  Isle, (6)Hinterland Raid, (6)Ruins of Stratholme, (8)Azeroth Grand Prix,
+  (8)Extreme Candy Wars 2004.
+
+FIXES
+
+- Fixed a problem that prevented selection sounds from playing when 
+  units were drag-selected.
+- Fixed a problem that caused Gargoyles to become stuck in Stone Form.
+- Fixed a problem with Dark Ritual or Death Pact leaving an unusable
+  corpse.
+- Fixed a problem that caused a player's units to continue to harvest
+  resources after they were dropped and no one has control of them.
+- Fixed a problem that allowed Ethereal units to take Physical damage from
+  missiles that were in flight as they became Ethereal.
+- Fixed a problem that allowed Magic Immune units to take Magical damage
+  from missiles that were in flight as they became Magic Immune.
+- Fixed a problem that allowed Unstable Concoction to kill the casting
+  Batrider even after its target became Ethereal.
+- Fixed the visibility of the Flamestrike de-buff icon.
+- Fixed a problem with Defend not absorbing Piercing splash damage.
+- Fixed a problem with melee units with Incinerate not damaging any units
+  that they would Incinerate.
+- Fixed a problem that caused Heroes holding items that increase their 
+  primary attribute to display an increase in their base damage on the
+  info panel. Their actual damage was not affected.
+- Fixed a problem that allowed morphing units in their alternate form to
+  retain their alternate form bonuses when killed by a Mana Flare when
+  activating their alternate form.
+- Fixed a problem that allowed Destroyers to use Devour Magic on Watcher
+  Wards.
+- Fixed a problem that prevented Watcher Wards from being revealed by the
+  Dust of Appearance.
+- Fixed a problem that removed the Summoned state from Carrion Beetles
+  when they burrow.
+- Fixed a problem with Metamorphosis and Chemical Rage that allowed the
+  timer to remain active after the Hero had died.
+- Fixed a problem with Goblin Zeppelins being considered Undead instead of
+  Mechanical in custom Reign of Chaos maps.
+  
+MAPS
+
+- (8)Crossroads - Fixed a grammatical error.
+
+BALANCE CHANGES
+
+Undead
+- Banshee build time has been reduced to 28 seconds from 35 seconds.
+
+Neutral
+- Drunken Haze movement reduction has been changed to increase by level.  
+  The new ranks are: 15% / 30% / 50% from the previous 50% / 50% / 50%.
+- Breath of Fire initial damage reduced to 65/125/170 from 65/130/175.  
+- Tornado mana cost has been reduced to 200 mana from 250 mana.
+- Incinerate can now be turned on or off.  When turned on, it 
+  consumes 6 mana per attack.  It is otherwise unchanged.
+- Lava Spawns now require 15 attacks to replicate, up from 14.
+- Summon Quilbeast cooldown increased to 25 seconds from 20 seconds.
+- Summon Hawk mana cost increased to 50 mana from 35 mana.
+- Pocket factory hit points increased to 300/450/600 by level from
+  300/400/500.
+- Healing Spray effect per wave increased to 40/55/70 from 35/50/65
+
+Items
+- Staff of Teleportation gold cost has been increased to 150 gold from 100
+  gold.
+  
+WORLD EDITOR FEATURES
+
+Trigger Editor
+- Added new functions:
+  - Environment: Terrain Pathability
+  - Environment: Terrain Tile Type
+  - Environment: Terrain Tile Variance
+  - Floating Text: Permanent/Expires
+  - Floating Text: Suspend/Resume
+  - Floating Text: Change Position to Point
+  - Floating Text: Change Position to Unit
+  - Floating Text: Change Age
+  - Floating Text: Change Lifespan
+  - Floating Text: Change Fadepoint
+  - Floating Text: Change Text
+  - Game: Enable/Disable Selection (Functionality and/or UI)
+  - Game: Enable/Disable Pre-Selection (Functionality and/or UI)
+  - Game: Enable/Disable Drag-Selection (Functionality and/or UI)
+  - Trigger: Get Trigger Name
+- Added new unit states:
+  - Plagued
+  - Snared
+  - Stunned
+  - Poisoned
+  - Polymorphed
+  - Sleeping
+  - Resistant
+  - Ethereal
+  - Magic Immune
+- Lightning triggers now have their own category.
+- Lightning triggers now use the Z coordinate of the specified Location.
+- Custom Lightning triggers can now use an explicit Z coordinate.
+
+WORLD EDITOR FIXES
+
+- Fixed custom buff support for Black Arrow, Cloud of Fog, Inferno, Aerial
+  Shackles, and Tornado.
+- Fixed multiple-level support for Shadowmeld.
+- Fixed Rain of Chaos' order id.
+
+--------------------------------------------------------------------------
+- PATCH 1.17
+--------------------------------------------------------------------------
+
+FEATURES
+
+- Two new Neutral Heroes, the Firelord and the Goblin Alchemist, have been 
+  added to the game. For further information on these exciting new Heroes 
+  and a listing of their abilities, visit http://www.battle.net/war3 .
+- A "Profile" button has been added to the Battle.net toolbar. You can now
+  look at your profile from the Battle.net news page without ever entering
+  chat.
+- Replays now display their version number in the Replay selection screen.
+- Designating a new clan chieftain now includes a confirmation dialogue.
+- 9 maps from our Bonus Map program including (8)Funny Bunny's Egg Hunt, 
+  (8)Shamrock Reef, (8)Dragon Falls, (8)Deadlock, (8)Gold Rush, (8)Slalom,
+  (6)Copper Canyon, (6)Rolling Hills, and (4)Predators.
+  
+FIXES
+
+- Fixed a problem with Burning Oil that caused the effect to not be created
+  when buildings were attacked directly.
+- Fixed a problem that caused some instant spells cast after a targeted
+  spell to execute before the targeted spell.
+- Fixed problems with the Melee AI when it attempted to use certain 
+  instant spells.
+- Fixed a problem with Morphing units re-executing commands that were
+  interrupted by the morph timer expiring.
+- Fixed an exploit that would allow players to track enemy units under
+  the fog of war with queued move commands.
+- Fixed a problem with units following enemy units and never proceeding
+  to the next order when they moved underneath the fog.
+- Fixed a problem with Envenomed Spears wearing off too early if the
+  affected unit was also affected by Slow Poison or the Orb of Venom.
+- Fixed the invisibility transition time for levels 2 and 3 of Wind Walk.
+- Fixed the orb air attack speeds for the Blood Mage, Pit Lord, and Fire
+  Lord.
+- Fixed the armor upgrade values for Human, Orc, and Undead shops.
+- Fixed a problem preventing Phased Faerie Dragons from teleporting.
+- Fixed an issue with Faerie Dragons that could cause them to become 
+  unresponsive to most commands if you Phase Shifted just as the unit was
+  attacking something.
+- Fixed Doom so that the spell now has a maximum creep level.
+- Fixed an issue that caused Crypt Fiends to deactivate Web when they
+  unburrowed.
+- Fixed a problem with Cleaving Attack that would prevent it from working
+  when Orbs were equipped.
+- Fixed an issue with Cleaving Attack that would cause Thorns Aura to
+  reflect damage on targets that took splash damage.
+- Fixed an issue that could cause the Orb of Annihilation's splash damage
+  to ignore armor.
+- Fixed a problem that could cause Metamorphosis to cancel the effects of
+  a Staff of Teleportation.
+- Fixed Devour such that devoured units now give experience to the owner of 
+  the Kodo Beast if it gets polymorphed/hexed and instantly digests the unit.
+- Fixed rally points such that friendly units will no longer cancel rally 
+  orders to Heroes that teleport, Blink, or Mirror Image.
+- Fixed illusions so they now get correct damage, armor, life, and mana 
+  bonuses consistent with the original units.
+- Fixed an issue with morphed units that could cause them to cost food when 
+  revived by Animated Dead if they had died in their morphed form.
+- Fixed the Storm Pandaren (from the Pandaren Brewmaster's ultimate) so it
+  now correctly displays Wind Walk's backstab damage.
+- Fixed a problem with Flame Strike that wouldn't allow Blood Mages to
+  become invisible after they finished channeling the spell. Prior to this
+  fix, the Blood Mage would become visible for as long as damage was taking
+  place, despite the fact that he was no longer casting the spell.
+- Fixed upgrading buildings such that they now receive the correct hit point 
+  bonus from the Masonry upgrade.
+- Fixed a problem that could cause manually cast arrow abilities to
+  occasionally fail.
+- Fixed racial shops so they no longer block line of sight.
+- Fixed multiple units' casting the same spell so they now distribute the 
+  load more efficiently.
+- Fixed creeps so that missile spells no longer wake them when launched.
+  Instead, the creeps now wake when a spell hits.
+- Fixed channeling units so they will auto-queue orders issued to the entire 
+  selection except for Stop and Hide. Orders issued to the selected subgroup 
+  will break channeling (so you can teleport out of the area while
+  channeling). 
+- Fixed units in the middle of a non-channeling spell such that they will now
+  auto-queue all orders until the spell is complete.
+- Fixed Hero icons so their order is now consistent throughout the game.
+- Fixed replay speeds so they can once again be changed while the replay 
+  is paused.
+
+
+MAPS
+
+Expansion - Frozen Throne
+- (4)Turtle Rock - Top right and bottom left creep camps now drop equivalent 
+  items.
+- (4)Twisted Meadows - Added some trees near the south Mercenary Camp
+  to prevent mercenary purchase without engaging the creeps. Also added
+  some trees to prevent item purchase from Goblin Merchant without
+  engaging creep camp.
+- (6)Demon's Crossing - Removed the two Dragon Roosts and their accompanying 
+  creep camps from both sides of the map, then altered the creep camp 
+  guarding the remaining Dragon Roost. Rebalanced most of the creep camps to 
+  be more player friendly.
+- (6)Monsoon - Added some trees near the water line to prevent units from 
+  moving behind them.
+- (6)Typhoon - Added some trees near the expansion gold mines to prevent the 
+  creeps from harassing players when they pass by. Added some trees to start 
+  locations and moved bottom middle start location closer to trees to help 
+  with initial harvesting.
+- (6)Upper Kingdom - The two center creep camps that are guarding gold mines 
+  have been pushed back from common pathing areas.
+- (8)Mur'gul Oasis - Center creeps pushed further back away from common 
+  pathing areas through the middle.
+- (8)Gold Rush - Fixed missing Tavern from the bottom left corner.
+
+Classic - Reign of Chaos
+- (6)Dark Forest - Cleaned up some trees to provide wider areas for larger
+  groups to path through. The creep camp guarding the top middle expansion 
+  gold mine no longer attacks units that path nearby.
+
+
+BALANCE CHANGES
+
+General
+- Haunted and Entangled Gold Mines are now indicated on the minimap.
+- The experience bonus for having a single Hero and owning a tier-2 or 
+  tier-3 town hall has been increased to +15%/+30% from +10%/+20%.
+- Line damage spells such as Shockwave, Carrion Swarm, Breath of Fire, and 
+  Breath of Frost no longer damage a targeted friendly unit.
+- Default autocast spells (like Abolish Magic or Bloodlust) that require 
+  research will now have autocast enabled when the research completes.
+- Arrow abilities set to autocast now override Orb effects.
+- Repairing an upgrading building now uses the repair time and cost of the 
+  original building.
+- Harvesting, building, and repairing workers are the only units left 
+  behind by a teleport.
+- Hexed and polymorphed units now have the same statistics as the normal 
+  units except for movement speed and the model. Previously, these abilities
+  were changing the armor type and hit point regeneration type.
+- Constructing Peasants are now included in group selections. A
+  constructing Peasant will automatically queue all orders unless it is
+  the only unit selected, or until it receives a Stop order.
+- Channeling ultimates now cancel invulnerability. If an invulnerability 
+  spell is used while channeling, channeling will end.
+- Damage-capped AOE spells now have a seperate cap for friendly, enemy, 
+  and neutral units.
+- Enemy units now take damage from Lightning Shielded illusions.
+- If a unit is rallied to a unit/Hero that dies, the rallied unit will 
+  now continue to move towards the last spot the rally target occupied.
+
+Human
+- Defend has been reworked. Piercing damage is still reduced by 50%, and 
+  there is now an additional 30% chance that a defending Footman will
+  reflect unit attacks back on the source for full damage. Piercing damage 
+  building attacks have a 30% chance to do no damage.
+- Banish now costs mana 75/60/50 by level, and has a 0-second cooldown at all 
+  levels, down from 5/3/1 seconds.
+- Siphon Mana drain per second has been reduced to 15/30/45 from 18/35/55.
+- Siphon Mana has been reworked. It now transfers mana from an enemy to the 
+  Blood Mage, or from the Blood Mage to an ally. Additionally, Siphon Mana
+  can push the Blood Mage's mana up to as much as twice its normal maximum
+  value, though mana gained in this way drains off rapidly if not used. 
+- Blood Mage attack speed increased by 30%. 
+- Flame Strike damage cap set to the equivalent of 6 targets, up from 5. 
+- Knight hit points increased to 835 from 800. 
+- Arcane Towers now deal 20 bonus damage per attack to summoned units.
+- Divine Shield can no longer be deactivated.
+- Phoenixes no longer regenerate life from a Fountain of Health.
+
+Undead
+- Death Knight base armor reduced to 3 from 4. 
+- Banshee attack range increased to 600 from 500.
+- Units raised by Animate Dead are now invulnerable to dispels as well as 
+  damage.
+- Destroyers no longer regenerate mana from a Fountain of Mana.
+- Unsummoning an upgraded building now provides resources for the original 
+  building in addition to the cost of the upgrade (before it was just the 
+  cost of the upgrade).
+- The Nerubian Towers' frost attacks now properly affect magic-immune units.
+- Devour Magic now dispels the owl summoned by Sentinel, but does not give
+  mana to the Destroyer.
+- Since we have corrected the splash damage bug with Destroyers, we have 
+  reverted Destroyers to their old 1.14 statistics.  Destroyers now have 
+  mana regeneration of -3/sec (down from -6/sec), Orb of Annihilation 
+  now costs 25 mana down from 50 mana, and Devour Magic restores 75 mana 
+  per unit dispelled, down from 150.  Note that Devour Magic no longer 
+  gives health or mana when a player devours friendly buffs.
+
+Orc
+- Wind Walk now allows the Blademaster to walk through units.
+- Wind Walk's backstab damage reduced to 40/70/100 from 50/85/120.
+- Unstable Concoction primary target damage increased to 600 from 550.
+- Chain Lightning will now jump to sleeping targets if the primary target
+  is also asleep.
+- Tauren Chieftain base Intelligence increased to 15 from 14. 
+- Troll Batrider build time increased from 25 to 28. 
+- Experience granted for killing the Spirit Wolves summoned by the spell 
+  Feral Spirit increased by approximately 40%.
+- Spirit Link can now be used to affect illusions.
+- Spirit Walkers now appear before Raiders and Kodo Beasts in the group 
+  selection.
+- Troll Batriders can no longer use Unstable Concoction while Banished.
+
+Night Elf
+- Abolish Magic no longer auto-dispels hero spells.
+- Abolish Magic no longer removes positive buffs on friendlies or negative
+  buffs on enemies when manually cast (it already did this for autocast).
+- Rejuvination can now target magic immune units.
+- Faerie Fire armor debuff reduced to 4 from 5.
+- Archer hit points increased to 245 from 240. 
+- Faerie Dragon damage increased to 14-16 from 13-14.
+- Level-1 Entangling Roots base duration reduced to 9 seconds from 12, but 
+  level-3 Entangling Roots damage increased to 25 per second from 15 per 
+  second.
+- Ancient Protector's attack now uses a homing missile.
+- The Huntress' bouncing attacks will no longer bounce back to the initial 
+  target.
+- Shadow Strike is no longer removed by Banish.
+- Taunt now affects only the 10 closest units. It is also now disabled by 
+  Banish.
+
+Neutrals
+- Naga Sea Witch speed reduced to 270 from 300.
+- Cluster Rockets mana cost reduced to 70 from 75. 
+- Voidwalker mercenaries now cost 2 food, up from 1.
+- Hydras spawned from a splitting parent are no longer considered summoned 
+  units.
+
+Items
+- Targeting an unwalkable location with a Scroll of Town Portal will now
+  try to place units as close to that location as possible. If no valid
+  location can be found, the units will be teleported to an area around
+  the town hall.
+- All Orbs now affect magic-immune units.
+- Orb of Corruption debuff can no longer be dispelled.
+- Orb of Fire now deals Spell damage instead of Magic damage. 
+- Mechanical Critters are no longer displayed on the minimap.
+- Mechanical Critters no longer teleport with you.
+- Amulet of Spell Shield no longer blocks physical skills (e.g., Ensnare).
+
+NOTES: Replays are incompatible between major game revisions (1.16 
+replays cannot be viewed with the 1.17 version of Warcraft III). 
+Custom save games will not load from version 1.16.
+
+
+--------------------------------------------------------------------------
+- PATCH 1.16
+--------------------------------------------------------------------------
+
+BALANCE CHANGES
+
+Human
+- Rifleman hit points reduced to 505 from 520.
+
+Undead
+- Destroyer negative mana regeneration increased to -6/sec from -3/sec.
+- Mana gain of Devour Magic increased to 150 per dispelled unit from 75 per
+  dispelled unit.
+- Orb of Annihilation mana cost increased to 50 from 25.
+- Orb of Annihilation had a splash damage that was dealing full damage to 
+  all targets instead of full damage to the primary target, and reduced 
+  damage to nearby targets. This discrepancy has been fixed and the orb 
+  now deals damage identical to the functionality in patch 1.14.
+
+Orc
+- Bladestorm mana cost reduced to 200 from 250.
+- Troll Batrider hit points reduced to 400 from 500.
+- Demolisher build time increased to 40 seconds from 36 seconds.
+
+Neutral Heroes
+- Cluster Rockets cooldown reduced to 6 seconds from 7 seconds.
+- Pocket Factory cooldown reduced to 35 seconds from 40 seconds.
+- Pit Lord base Strength increased to 26 from 24.
+- Dark Minion hit points increased from 200/260/320 to 215/290/405 and armor 
+  reduced to 0/0/0 from 1/2/3.
+- Breath of Fire has been damage capped to 8 targets. Note that this does 
+  not affect the amount of damage dealt by burning damage from the Breath 
+  of Fire / Drunken Haze combination.
+- Storm, Earth and Fire Pandaren hit points increased by 200, and attack 
+  damage increased by 33%.
+
+Items
+- Shared cooldown of 20 seconds added on all summoning items.
+- Wand of Lightning Shield given 10-second cooldown.
+- Staff of Preservation max stock set to 1, down from 2.
+- Sentry Ward item duration reduced to 5 minutes from 10 minutes.
+
+NOTES: Replays are incompatible between major game revisions (1.15 replays
+cannot be viewed with the 1.16 version of Warcraft III). Custom save games 
+will not load from version 1.15.
+
+
+--------------------------------------------------------------------------
+- PATCH 1.15
+--------------------------------------------------------------------------
+
+FEATURES
+
+- A new Neutral Hero, the Goblin Tinker, has been added to the game. For
+  further information on this strange new Hero and a listing of his abilities,
+  visit http://www.battle.net/war3 .
+- The matchmaking system has been significantly updated. New accounts should 
+  more quickly begin playing against opponents of equivalent skill level.
+- Clan ladders are now functional. Games against ranked players will now 
+  contribute to your clan's ranking on the ladder. 
+- Clan information is now displayed in your player profile, including your 
+  clan name, tag, ladder ranking, and more.
+- Display of channel moderators has changed.
+- Ladder information is now more clearly separated in your user profile.
+- Free For All (FFA) games are now anonymous. Account names and player levels 
+  will no longer be displayed to other participants. Other players will be 
+  displayed as "Player X", where X is the number of the player in the game.
+- Added an on/off button for the "Alt" formation toggle functionality to the
+  Options --> Gameplay menu. The option is "On" by default.
+- Added a "Worker Selection" button that appears beneath the construction 
+  progress indicator for Night Elf and Orc buildings. This allows Orc and 
+  Night Elf players to re-select workers that are currently constructing a 
+  building and give them additional way-pointed orders.
+- Added the ability for users to double-click replay files (*.w3g files) from 
+  system directories. Doing so will automatically launch the game and load the 
+  appropriate replay.
+- Buff and debuff icons (not including auras) now flash when their duration 
+  has 10 or fewer seconds remaining.
+- Buff icons will display in the tooltip when a group-selected unit is 
+  highlighted in the info panel.
+  
+FIXES
+
+- Fixed an issue with cargo based structures/units (Entangled Gold Mines, Orc 
+  Burrows, Goblin Zeppelins, etc.) which could cause units to get stuck
+  inside permanently.
+- Fixed a problem where water elementals that died during Mass Teleport were 
+  not being properly removed from the game.
+- Fixed an issue that caused hit point bars not to show up properly for some 
+  teams when viewing replays.
+- Fixed an issue that caused the Anti-magic Shell art to display incorrectly 
+  on Crypt Fiends after they unburrow.
+- Fixed a problem where a Scroll of Town Portal could be wasted if the 
+  targeted town hall was destroyed before the spell completed. The Hero now 
+  retains the Scroll if the spell doesn't complete.
+- Fixed an issue with the Mountain Giant's Taunt that could cause Invisible 
+  and Shadowmelded units to improperly attack and reveal themselves when the 
+  ability was activated.
+- Fixed an issue with the "Observers on Defeat" functionality that caused 
+  units not to be displayed on the minimap.
+- Fixed a problem with the Pandaren Brewmaster that caused incorrect 
+  regeneration of health and mana while his ultimate was active.
+- Fixed a problem with Spell Steal and Polymorph that could turn a ground unit
+  into a Flying Sheep.
+- Fixed an issue that could cause the Web and Ensnare graphics to display 
+  improperly.
+- Fixed a problem that caused the Inferno stun damage to not be applied to 
+  magic-immune units in The Frozen Throne. All ultimates should ignore magic 
+  immunity.
+- Fixed some spell targeting issues with Resistant Skin. Doom (and possibly 
+  other spells) should work the same way as Charm.
+- Fixed an issue with Metamorphosis which prevented some Orb effects 
+  from working while the Demon Hunter was in his altered form.
+- Fixed a problem with the Scroll of Town Portal which did not allow Heroes 
+  to regenerate the appropriate hit points and mana while the spell was being 
+  cast.
+- Fixed the accidentally inflated hit point regeneration rate on the Naga 
+  Sea Witch, Beastmaster, Pandaren Brewmaster, and Spell Breaker back to 
+  the standard .25 hit points per second.
+- Fixed Shockwave's damage radius to 125.
+- Fixed Orb items to now cause the proper damage versus air for melee Heroes.
+- Fixed an issue with Militia in which units ordered "Back to Work" could 
+  change back into Militia when arriving back at the town hall.
+- Fixed Breath of Fire's damage area to more accurately represent a cone area 
+  of effect, rather than a line.
+- Acolytes harvesting from a Haunted Gold Mine with the Entangling Roots buff 
+  now register as idle like other peons. 
+- Fixed the Blight generated by the Sacrificial Skull such that a 
+  non-Undead building placed on top of the Blight will not remove the 
+  Blight when it finishes construction.
+  Detonate, Dispel Magic, and Disenchant correctly dispel this Blight.
+- Fixed an issue that allowed Banished worker units to build, Repair, 
+  and harvest. Note that Detonate and Unsummon will remain unaffected by 
+  Banish since they're considered "magical".
+- Fixed Lightning Shield so that if two units with Lightning Shields overlap 
+  each other, they both correctly take damage.
+- Fixed an issue that allowed an ally that did not have Shared Control to 
+  Uproot and command your Ancient of Wonders. Allied players without Shared 
+  Control should only be able to purchase items from the building.
+- Fixed a problem with item-summoned units which would cause them to leave 
+  corpses and spawn units from Black Arrow.
+- Fixed an issue with Animate Dead which in some cases caused the spell to
+  transfer the unit upgrades to the new owner.
+- Fixed an issue that prevented players from way-pointing the Faerie 
+  Dragon's Mana Flare ability.
+
+MAPS
+
+Expansion - Frozen Throne
+- (2)Tirisfal Glades - Added more trees to bottom start location. Mercenary 
+  creep camps are better suited to drop a level-4 charged item.
+- (2)TheTwoRivers - Removed the Rune of Rebirth from Ogre Mage; added Rune of 
+  Mana to Ogre Mage. Lowered Ogre Lord drop from permanent level-6 item to
+  level-5 item. Increased level of power up.
+- (2)GlacialThaw - The drop tables have been re-adjusted for better one-on-one 
+  competition.
+- (4)TwistedMeadows - Corner creep camps harder to Gargoyle rush. Replaced 
+  Tavern with Goblin Merchant; replaced Marketplace with Tavern. Lowered creep 
+  strength for Goblin Merchant. Goblin Laboratories are harder to purchase 
+  from without engaging creeps.
+- (4)TurtleRock - Added some trees to the south Goblin Merchant area to 
+  prevent the player from making purchases from the building without engaging 
+  the creeps that guard the building. Changed several creep drops to help with 
+  game flow.
+- (6)DemonsCrossing - Fixed alliance settings.
+- (6)RiverOfSouls - Removed the creeps from the taverns and fixed a cave 
+  doodad.
+- (8)AzureTowerDefense - Fixed the hotkey for the Azure Wisp 'A'. Fixed a 
+  spelling error with 'Upgrade Arrow Damage' tooltip. Azure Witch had a 
+  conflicting ability hotkey that has been fixed. Brilliance Aura and Frost 
+  Arrow both used 'R'; Brilliance Aura now uses 'A'. The +3 Tome's description 
+  now correctly states that it adds +3 to all Hero attributes.
+
+Classic - Reign of Chaos
+- (2)Plunder Isle - Added some trees to the north and south location near the 
+  Goblin Merchant to prevent the player from making purchases without engaging 
+  the creep guarding the building. Cleared some room around the Goblin 
+  Merchant to prevent Archer cheese.
+
+BALANCE CHANGES
+
+Human
+- Flamestrike damage capped to 5 targets. If more than 5 targets are hit, the 
+  damage done to 5 targets normally is split evenly across all available 
+  targets.
+- Mass Teleport cooldown increased to 20 seconds from 15 seconds.
+- Level 1 water elemental damage reduced to 1d5 + 17 from 2d5 + 19, but hit 
+  points increased to 525 from 450.
+- Bash % chance to hit increased by 5% across all levels.
+- Slow mana cost increased to 50 from 40.
+- Control Magic mana cost is now calculated based on the target unit's 
+  current hit points instead of its maximum hit points. The dynamic mana 
+  cost of Control Magic has also been increased to .45 mana per hit point 
+  from .3 mana per hit point.
+- Spell Breaker feedback damage vs. Heroes reduced to 4 per hit from 5 per 
+  hit.
+- Dragonhawk Rider damage reduced to 1d3 + 17 from 1d3 + 18.
+- Flying Machine damage vs. air increased to 1d2 + 13 from 1d2 + 11.
+- Militia are now level-1 units, instead of level-2 units. This causes them 
+  to give less experience when killed.
+- Scout Towers can be repaired twice as fast as before.
+
+Undead
+- Frost Nova cold effect now lasts 2/3/4 seconds against Heroes. It previously 
+  lasted 4/6/8 seconds against Heroes.
+- Animate Dead mana cost reduced to 175 from 250.
+- Death Coil cooldown increased to 6 seconds from 5 seconds.
+- The damage a Banshee takes while possessing a unit has been reduced to 
+  225% from 300%.
+- Anti-magic Shell mana cost reduced to 75 from 100.
+- Anti-magic Shell correctly allows self-targeting now.
+- Devour Magic cooldown reduced to 7 seconds from 8 seconds.
+- Ziggurat armor reduced to 1 from 5.
+- Abomination hit points increased to 1175 from 1080.
+- Obsidian Statue hit points reduced to 550 from 700.
+- Frost Wyrm build time reduced to 65 seconds from 80 seconds.
+- Boneyard build time reduced to 70 seconds from 80 seconds.
+- Necromancer build time reduced to 24 seconds from 30 seconds.
+- Skeletal Longevity now costs 50/75, down from 100/75, and can be researched 
+  in 30 seconds, down from 60 seconds.
+- Necromancer Adept and Master training now take 30 and 45 seconds to 
+  research, down from 60 and 75 seconds.
+- Exhume Corpses now requires Halls of the Dead instead of Black Citadel.
+- Level-2 Carrion Beetles are now the same size as Ghouls, instead of the 
+  same size as Crypt Fiends. Level-3 Carrion Beetles are now the same size 
+  as Crypt Fiends, instead of the same size as Abominations.
+- Possession damage multiplier reduced to 166% from 225%.
+
+Orc
+- Disenchant range increased to 650 from 500, and mana cost reduced to 100 
+  from 125.
+- Feral Spirit cooldown increased from 25 to 30.
+- Troll Batrider's Unstable Concoction has changed such that the Batrider 
+  increases speed dramatically when it gets within a short range of its 
+  target.
+- Liquid Fire damage reduced to 8 per second down from 15 per second.
+- Demolisher damage reduced to 1d18 + 71 from 1d19 + 75.
+- Troll Headhunter build time reduced to 20 seconds from 22 seconds.
+- Spirit Walker build time reduced to 38 from 42.
+- Blademaster speed increased to 320 from 300.
+- Wind Walk bonus damage increased to 50/85/120 from 50/75/100
+- Watch Tower build time increased to 60 seconds from 55 seconds.
+
+Night Elf
+- Chimaera movement speed reduced to 250 from 270.
+- Fan of Knives level-2 base damage increased to 125 from 120, and 
+  level-3 base damage increased from 180 to 190. Although this appears 
+  to be an upgrade, it actually is a reduction in overall power. The 
+  previous patch had a bug at levels 2 and 3 in which, if 6 or more 
+  targets were available, the ability did more than the expected 
+  amount of maximum damage. This change remedies that error.
+- Mana Flare splash damage no longer harms units that lack a mana pool.
+- Wellspring now upgrades Moonwells to 425 mana, down from 500 mana, and 
+  Moonwell mana regeneration scaled proportionally.
+- Force of Nature casting range increased to 800 from 700.
+- Faerie Fire mana cost increased to 45 from 35.
+
+Neutral Units and Heroes
+- Dark Ranger starting Agility increased to 21 from 19.
+- Breath of Fire now correctly has a cone shape at all levels. Previously, 
+  the level-2 and level-3 versions were shaped exactly like Shockwave, 
+  while the level-1 area was occupying a much larger area than intended. 
+  The spell now hits far fewer targets, which roughly matches the graphic.
+  The damage of Breath of Fire has been increased to 65/120/175 from 
+  50/100/150 to compensate for this change.   
+- Level-3 Quilbeasts' splash radii have been reduced from 75/100/150 to
+  25/75/125.
+- Drain Life damage increased to 25/40/55 per second from 20/35/50.
+- Cleaving Attack damage increased to 30%/55%/80% from 25%/45%/65%.
+- Tornado can now cyclone a particular unit more often  once every 22 
+  seconds, down from once every 30 seconds.  
+- Tornado speed increased to 75 from 60. 
+- Zeppelins are now available at the start of the 2nd day, rather than at 
+  the first nightfall.
+- Neutral Hero lumber cost increased to 135 from 100.
+- To purchase from a neutral shop or Mercenary Camp, a valid unit or Hero 
+  must now be within 450 distance units, down from 600 distance units. 
+  Note that this change does not affect racial shops.
+
+Items
+- Boots of Speed now cost 250 gold, up from 150 gold. They are not 
+  available until the first nightfall, and are now considered a level-3 
+  permanent item, up from level 2. 
+- Talisman of the Wild is now a level-5 charged item, up from 4.
+- Legion Doom-Horn is now a level-5 permanent item, up from being a 
+  level-4 permanent item.
+- Wand of Lightning Shield reduced to 2 charges from 3.
+- Orb of Venom poison damage increased to 9 per second from 7 per second.
+- Orb of Fire cost reduced to 275 gold from 300 gold.
+- Staff of Preservation cooldown increased to 30 seconds from 15 seconds.
+
+Miscellaneous
+- All autocast buffs and debuffs cast by racial units now have a cooldown 
+  of 1 second. Before, some had cooldowns of 0 seconds, while others had 
+  cooldowns of 1 second. This change does not include Priest Heal.
+- Hero spell resistance increased to 30% reduction from 25% reduction.
+
+WORLD EDITOR FEATURES/IMPROVEMENTS
+
+General
+- Added Game Interface fields for "Text - Unit Classification".
+- Reduced minimum map size to 32 (was 64).
+
+Trigger Editor
+- Added new functions:
+  - Hero - Hero Proper Name (string call)
+  - Player - Divert Player Income (Tax) (action)
+  - Player - Player Tax Rate (integer call)
+  - Unit - Add Classification (action)
+  - Unit - Remove Classification (action)
+  - Unit - Issue Order Targeting An Item (action)
+  - Unit Group - Issue Order Targeting An Item (action)
+
+Object Editor
+- Enabled additional abilities for modification: Poison Arrows and Blighted
+  Gold Mine ability.
+- Added checkbox UI for Channel ability "Data - Options" field.
+- Added new fields:
+  - Stats - Hero - Hide Hero Death Message (Hero units)
+  - Stats - Hide Minimap Display (units)
+
+WORLD EDITOR FIXES
+
+General
+- Custom abilities are now disabled properly via the Ability Properties 
+  dialog.
+- Object Properties dialogs now properly load facing angles between 270-360 
+  degrees.
+- Fixed a crash that could occur when modifying very long Game Interface text 
+  fields.
+
+Trigger Editor
+- Abilities added via "Unit - Add Ability" action now properly apply currently 
+  researched "Ability Level Bonus" upgrade effects.
+- Dialogs now respond to clicking the 12th button.
+- Compile errors in the custom script section no longer disable all triggers 
+  or lead to an infinite loop of error messages.
+
+Object Editor
+- Import/Export menu items now properly update text for Buffs/Effects tab.
+- Warnings about resetting objects now appropriately refer to the current tab.
+- Maximum value of "Data - Maximum Creep Level" has been increased in order
+  to work with some abilities (Devour, Possession, Item Command).
+- Ability "Item Attack Corruption Bonus" now has the correct data fields.
+- Ability "Thorns Aura (Neutral Hostile)" now has the correct data fields.
+- Fixed some abilities that did not recognize non-default buffs and/or 
+  effects.
+- (Mac only) Mousing over the "New Custom Buff" toolbar button will no longer 
+  crash the editor.
+
+NOTES: Replays are incompatible between major game revisions (1.14 replays
+cannot be viewed with the 1.15 version of Warcraft III). Custom save games 
+will not load from version 1.14.
+
+
+--------------------------------------------------------------------------
+- PATCH 1.14b
+--------------------------------------------------------------------------
+
+FIXES
+
+- Fixed an issue with recalling control groups and quickly pressing 'TAB'
+  to change your selected subgroup.
+
+--------------------------------------------------------------------------
+- PATCH 1.14
+--------------------------------------------------------------------------
+
+FIXES
+
+- Fixed an issue with custom save games from version 1.12 (including those 
+  from Orc Act I) so Hero Agility is recognized properly. Attack speeds 
+  will now be correct when loading from a previous save game.
+- Fixed an issue that caused Scroll of Town Portal to always place your
+  units to the lower right side of your town hall instead of the location
+  you clicked.
+- Fixed an issue with the Skeletal Mage upgrade that prevented the Raise 
+  Dead skill from working on the corpses inside Meat Wagons.
+- Fixed an issue that caused a unit to permanently lose 75% of its attack
+  speed if it was Polymorphed or Hexed while under the effects of Unholy
+  Frenzy.
+- Fixed an issue with Spirit Link in which, if one of the linked units was
+  a Troll Berserker with the Berserk ability active, all units linked with
+  that Troll would take the increased damage penalty associated with the 
+  Berserk ability.
+- Fixed an issue in which, if a unit casting a channeling spell died from
+  Mana Flare, the channeled spell would linger in the area permanently.
+- Fixed an issue that caused the Call to Arms command not to work if you 
+  clicked the button an EVEN number of times.
+- Fixed an issue with Hero and unit ability orders in which, under certain 
+  conditions, ability orders would not be dispatched properly, causing 
+  "lag" or unresponsiveness.
+- Fixed an issue that caused Glaive Throwers to lose damage when the
+  Vorpal Blades upgrade was researched.
+
+BALANCE CHANGES
+
+Undead
+- Anti-magic Shell cost reduced to 100 from 150, and hit points absorbed 
+  reduced to 300 from 350.
+
+Night Elf
+- Mana Flare area-of-effect damage radius reduced to 200 from 250.
+
+Neutral Units and Heroes
+- Nerubian Webspinners now cost 200/35/3, up from 175/25/2.
+- Stampede damage reduced from 80 per beast to 60 per beast.
+- The Beastmaster bear's Bash ability now stuns Heroes for 1 second instead 
+  of 2 seconds.
+- Summoned Treants no longer give large gold bounties.
+
+NOTES: Replays are incompatible between major game revisions (1.13 replays 
+cannot be viewed with the 1.14 version of Warcraft III).
+ 
+--------------------------------------------------------------------------
+- PATCH 1.13b
+--------------------------------------------------------------------------
+
+FIXES
+
+- Fixed an issue related to copy protection.
+
+ANNOUNCEMENT
+
+We are aware of some new issues that came up with the release of the 1.13 
+patch. We will be releasing a 1.14 patch in the near future that addresses 
+some of these issues, including:
+
+- Custom save games from version 1.12 (including those from Orc Act I) 
+  incorrectly recognize Hero Agility, causing slow attack speeds after the 
+  1.13 patch is applied. This will be fixed in the 1.14 patch.
+- Town Portal always places your units to the lower right side of your town 
+  hall instead of the location you clicked, as it previously did. This will 
+  be fixed in the 1.14 patch.
+- If you research the Skeletal Mage upgrade, then you will no longer be able 
+  to use the Raise Dead skill on the corpses inside a Meat Wagon. This will 
+  be fixed in the 1.14 patch.
+- When a unit with Unholy Frenzy is Polymorphed or Hexed, the unit 
+  permanently loses 75% of its attack speed. This will be fixed in the 1.14 
+  patch.
+- If an Orc player uses the spell Spirit Link, and one of the linked units is 
+  a Troll Berserker with the Berserk ability active, then all units linked 
+  with that Troll will take the increased damage penalty associated with the 
+  Berserk ability. This will be fixed in the 1.14 patch.
+- If a unit casting a channeling spell dies from Mana Flare, the channeled
+  spell lingers in the area permanently. This will be fixed in the 1.14 
+  patch.
+- The Call to Arms command does not work if you click the button an EVEN 
+  number of times. This will be fixed in the 1.14 patch.
+* Any other confirmed issues that we can fix in time for the release of the 
+  1.14 patch.
+
+Regarding balance, we are currently assessing the state of balance of 1.13 
+based on user feedback, online testing, and the review of replays. Although 
+we will make some number of balance changes in 1.14, these have yet to be 
+determined. 
+
+We appreciate the community's patience and support in our endeavor to further 
+tune the play balance, enhance the feature set, and increase the stability 
+of Warcraft III: Reign of Chaos and Warcraft III: The Frozen Throne.
+
+- Blizzard Entertainment
+
+
+--------------------------------------------------------------------------
+- PATCH 1.13
+--------------------------------------------------------------------------
+
+FEATURES
+
+- Acts II & III, the conclusion acts to the bonus Orc campaign contained in 
+  The Frozen Throne, are included in this patch. To play these levels, you
+  can simply click the "Chapter Two - Old Hatreds" link from the Bonus Campaign 
+  screen. If you have completed Act I, your Heroes will carry over to Act II.
+  Otherwise, your Heroes will be default-level Heroes with basic starting items.
+- Warcraft III now supports binding an email address to your Battle.net account, 
+  so that you can recover your password at a later stage, similar to the 
+  functionality that was added to D2. 
+- Race selection on the scheduled game dialog (tournament finals) is now saved 
+  for future scheduled games.
+  
+MAPS
+
+Expansion - Frozen Throne
+- (2)Tirisfal Glades - Red creep camp a bit easier; lowered the level of item 
+  drop from 7 to 5.
+- (2)Glacial Thaw - Switched the start locations to face the center of the 
+  map. Lowered the level of a few creep camps; lowered the level of a few 
+  item drops.
+- (4)Paradise Island - Creeps are less likely to aggro passing units.
+- (4)Twisted Meadows - Added ground-based anti-air creep to the island. Added 
+  some trees behind the 3 o'clock start location to prevent building NE town 
+  hall behind the gold mine. Changed a level-4 drop from charged item to 
+  permanent item. 
+- (4)Bridge Too Near - Switched start locs with the expansion gold mines.
+- (4)Devil's Cauldron - Lowered the total level of 4 creep camps.
+- (4)Turtle Rock - The two large turtles that are placed between player bases
+  each drop a better item. Removed Rune of Lesser Healing from the expansion 
+  creep.
+- (4)Floodplains 1v1 - Removed the easy creep camp outside of player's base 
+  and moved it to the other easy creep camps further from the player's base.
+- (4)Lost Temple - Adjusted creep camps and item drops.
+- (4)Avalanche - Weakened the 3 o'clock and 9 o'clock expansion creeps. Added 
+  a green-sized camp in place of the orange camp.
+- (6)Bloodstone Mesa - Moved expansion creep back. Removed Marketplace and 
+  added Tavern.
+- (6)Rice Fields - Changed all the randomly generated creep camps; they are a 
+  bit easier for the user now.
+- (6)Wellspring - Added more trees to the starting location and moved the 
+  lumber a bit closer to the town hall. Removed the east and west gate from 
+  the center and created a bit more room around the Taverns.
+- (6)Stranglethorn Vale - Expansion creeps are a bit easier now.
+- (6)Timbermaw Hold - Moved the bottom Dragon Roost creep closer together to
+  eliminate two creep icons. Moved bottom middle start location deeper into 
+  forest to prevent the easy (green) creep camp from being nuked from start 
+  location placement. Same change to the bottom left position. Added a tree to 
+  the hole in the forest at the top left position to prevent units from 
+  getting stuck when portaling home.
+- (8)Friends - Changed drop item classification from 'any' level-6 items to 
+  'charged' level-6 items.
+- (8)Feralas - Removed some creep camps to help the flow of the game.
+- (8)Rock Quarry - Added some trees to several start locs that needed more 
+  lumber. Added ground-based anti-air to the center of the map.
+- (8)Mur'gul Oasis - Added another 1500 gold to the starting locations.
+- (8)Deathknell - Removed the center creep camp and neutral building.
+- (8)Plains of Snow - Moved Teal's easy creep camp farther away to prevent
+  them from being nuked at the start of the game.
+- (8)Garden of War - Moved Yellow's easy creep camp to prevent them from being
+  nuked at the start of the game.
+- (8)Battleground - Moved 12 o'clock easy creep camp further away from start
+  location to prevent them from being nuked at the start of the game.
+
+Classic - Reign of Chaos
+- (2)Plunder Isle - Added some ground-based anti-air units to the Dragon camps; 
+  also added some trees to the top start location.
+- (4)Lost Temple - Adjusted item drop in center area. Expansion gold mines 
+  should be a bit tougher. Each player's expansion gold mine now has one melee
+  creep. The Goblin Merchant camp is now tougher and has anti-air.
+
+BALANCE CHANGES
+
+Human
+- Storm Bolt stun is now 5 seconds vs. units and 3 seconds vs. Heroes at all 
+  levels. Previously, it had this level of stun at level 1, but went up 2 
+  seconds vs. units and one second vs. Heroes each level. Additionally, 
+  level-2 and level-3 damage are now 225 and 350, respectively.
+- Militia can now only be created from a player's starting Town Hall, but they
+  can still be created from any of the player's Keeps or Castles.
+- Blizzard is now damage capped. This damage cap is invoked when Blizzard hits 
+  more than 5 targets per wave.
+- Scout Tower hp reduced to 300 from 500, and armor reduced to 0 from 5.
+- Human towers now gain 2 armor per masonry upgrade, up from 1.
+- Banish has been reworked. Previously durations were 12(5) / 24(7) / 36(9) 
+  by level, and mana costs were 75/50/25 by level. Instead, its mana cost is 
+  now constant at 75 mana; its cooldown decreases with level (5 / 3 / 1); and 
+  its durations only slightly improve with level (12(4) / 15(5) / 18(6)).
+- Siphon Mana maximum range reduced to 800 from 850.
+- Flying Machine hit points increased to 200 from 175.
+- Holy Light mana cost reduced to 65 from 75.
+
+Undead
+- Web upgrade cost increased to 150/150 from 75/75.
+- Spirit Touch now restores 3 mana per casting, down from 4.
+- Possession has been reworked. It is now a channelled spell with a 4 1/2 
+  second casting duration. During this time, the target is disabled and
+  frozen into place, but is also invulnerable; and the Banshee takes triple
+  damage from all attacks. Stunning or killing the Banshee that is casting
+  Possession will cause the spell to abort. Additionally, the range of
+  Possession has been increased to 350 from 200.
+- Anti-magic Shell has been redesigned. The spell now absorbs the first 350 
+  points of spell or magic damage dealt to the target, but does not grant 
+  magic immunity. Note that spells absorbed by AMS can still deal secondary 
+  effects, such as stun, paralysis, or mana drain. Also the mana cost of
+  AMS has been re-balanced to 150.
+
+Orc
+- Troll Batrider Unstable Concoction damage reduced to 550 from 900, and 
+  splash damage increased to 140 from 100. 
+- Troll Batrider damage increased to 13-15 from 11-12.
+- Level-1 Spirit Wolves now move at speed 320, down from speed 350.
+- Level-3 Spirit Wolves now have 500 hit points, up from 400 hit points.
+- Damage sustained over Spirit Link is now never fatal. Fatal damage sustained 
+  via Spirit Link instead reduces a unit to 1 hit point, and dispels Spirit 
+  Link.
+- Stasis Trap area of effect reduced to 400 from 500.
+- Shockwave now has a damage cap of roughly 12 units affected. Note that this 
+  limit will not typically be reached except in team games.
+
+Night Elf
+- Shadow Strike level-1 DoT damage reduced to 10 per period, down from 15.
+- Detonate mana drain reduced to 50 from 100. 
+- Druid of the Claw caster upgrade times reduced to 25 seconds and 35 seconds 
+  respectively, down from 45 seconds and 1 minute.
+- Dryad damage increased to 17-19 from 16-18. 
+- Glaive Thrower damage changed from 39-50 to 36-53.
+- Eating trees now heals 500 hit points over 30 seconds, up from 200 
+  hit points over 10 seconds. 
+
+Neutral Buildings, Units and Heroes
+- Beastmaster Strength reduced to 22 from 25, and base armor reduced to 2 from 
+  3. 
+- Level-2 hawk hit points reduced to 450 from 625, and level-3 hawk hit points 
+  reduced to 650 from 875.
+- Breath of Fire and Drunken Haze mana costs reduced to 70 from 75.
+- Naga Sea Witch speed reduced to 300 from 320.
+- Frost Arrows mana cost is now 10 per shot, up from 7 per shot.
+- Pit Lord footprint, or collision size, has been reduced to 32 from 48. This 
+  means that he takes up less space on the battlefield. 
+- Rain of Fire is now damage capped. This damage cap is invoked when Rain of 
+  Fire hits more than 5 targets per wave.
+- Level-1 Black Arrow no longer has a cooldown, but level-1 Minion damage 
+  reduced to 9-10 from 14-15.
+- Cleave attack splash radius increased to 200 from 150.
+- Dragonspawn Meddlers have been rebalanced to correctly reflect their food, 
+  level and gold cost. They now have 370 hit points, down from 500 hit points, 
+  and deal 12-13 damage, down from 21-25 damage.
+- Mercenary Barbed Arachnathids are now available at the start of the second 
+  day, instead of very early in the game.
+- Creep Bloodlust mana cost increased to 75 from 50.
+- Creeps with Faerie Fire always use the creep version of Faerie Fire now. 
+  Additionally, creep Faerie Fire cooldown increased to 8 from 5.
+- Creep Curse cooldown increased to 8 from 5.
+- Thunder Lizard cost increased to 6 food from 5, and 150 lumber from
+  80 lumber.
+
+Items
+- Replenishment Potion can now be sold to a shop for 75 gold, down from 200
+  gold.
+- Sentry Wards now have 2 charges, down from 3.
+- Anti-magic Potion duration increased to 15 from 10.
+- Orb of Fire cost reduced to 300 from 375.
+- Orb of Venom cost reduced to 325 from 375.
+- Healing Wards and Ankh of Reincarnation are now level-4 items (down from 5).
+- Red Drake Egg, Stone Token and Spiked Collar are now level-5 items, up from 
+  level 4.
+- Staff of Preservation cost reduced to 150 from 200.
+- Staff of Preservation no longer affects allied units--it now can only 
+  affect its owner's units.
+- Staff of Sanctuary now heals 15 hp/sec, up from 10 hp/sec.
+
+Other
+- We have made modifications to how gold is mined. Although these changes are 
+  somewhat difficult to describe, the effect is that in almost all cases, 5 
+  peons are required for an Orc or Human to mine a gold mine at maximum 
+  efficiency (assuming the town hall equivalent is as close as possible).
+
+WORLD EDITOR FEATURES/IMPROVEMENTS
+
+General
+- Map-specific option for game data set to be used (custom vs. melee).
+- Model selection dialog now includes all doodad/destructible variations.
+- Added "standard/custom" filter menu to ability selection UI.
+- Added "Hero Attributes - Attack Speed Bonus per Agility Point" field to 
+  Gameplay Constants.
+- Added preference for "Automatically zoom Previewer to fit new models" 
+  (Visual tab).
+- New Gameplay Constants for global "Tech Tree - Dependency Equivalents".
+- New Gameplay Constants for tier-based Hero experience bonus factors.
+- New Game Interface fields for many of the game UI strings 
+  (Text - General fields).
+- Maximum unit movement speed increased from 400 to 522.
+- Minimum unit movement speed decreased from 25 to 1.
+- Added "Advanced->Reset Fixed Object Heights" option.
+  (Turn off to preserve any fixed object heights [set via ctrl-page up/down] 
+  while moving them.)
+- Object Manager Items tab now includes global item tables.
+- Increased maximum texture space for tilesets (was 12, now 13).
+
+Trigger Editor
+- "Hero skill" trigger parameter UI now allows selection of all Hero abilities, 
+  including custom.
+- Increased maximum length of trigger comments (was 640, now 2048).
+- "Event Response - Triggering Player" is now valid during "Dialog - Dialog 
+  Button Click" events.
+- Added special doodad animation tags "show" and "hide".
+- "Conversion - Convert Externalized String" will now work properly with 
+  string concatenation and substrings.
+- Enabled all save/load game trigger actions for general use (i.e., no longer 
+  Blizzard-signed maps only).
+- Added 'Pawns An Item' unit event (for units selling items back to shops).
+- Added new functions for working with "multiboards" (new Multiboard function 
+  category).
+- Added various new functions:
+    - Ability Name (string call)
+    - Buff Comparison (condition)
+    - Conversion - Convert String Case (string call)
+    - Destructible - Destructible Name (string call)
+    - Environment - Turn Water Deformation On/Off (action)
+    - Environment - Point Is Blighted (boolean call)
+    - Event Response - Target Point Of Ability Being Cast (point call)
+    - Event Response - Target Unit Of Ability Being Cast (unit call)
+    - Event Response - Target Destructible Of Ability Being Cast (destructible 
+    call)
+    - Event Response - Target Item Of Ability Being Cast (item call)
+    - Game - Show/Hide Creep Camps On Minimap (action)
+    - Game - Creep Camp Display Is On (boolean call)
+    - Game - Enable/Disable Minimap Buttons (action)
+    - Item - Set Charges Remaining (action)
+    - Item - Item Charges Remaining (integer call)
+    - Item - Set Custom Value (action)
+    - Item - Custom Value Of Item (integer call)
+    - Item - Item Name (string call)
+    - Player - Leaves Game (event)
+    - Player - Player Score (integer call)
+    - String Length (integer call)
+    - Unit - Set Rally-Point To Point (action)
+    - Unit - Set Rally-Point To Unit (action)
+    - Unit - Set Rally-Point To Destructible (action)
+    - Unit - Rally-Point As Point (point call)
+    - Unit - Rally-Point As Unit (unit call)
+    - Unit - Rally-Point As Destructible (destructible call)
+    - Unit - Remove Specific Buff (action)
+    - Unit - Unit Has Specific Buff (boolean call)
+    - Unit - Level Of Unit (integer call)
+    - Unit - Level Of Ability For Unit (integer call)
+    - Unit - Count Items Carried (integer call)
+    - Unit - Current Order Of Unit (order call)
+- Added "Height Offset" Camera Field value
+- Added Map Flag values
+    - Observers on defeat
+    - Use random Heroes
+    - Use random races
+    - Visibility - Hide Terrain
+    - Visibility - Map Explored
+    - Visibility - Always Visible
+
+Sound Editor
+- Added Edit->Find command (works on sound/music list and variable list).
+
+Object Editor
+- Custom Buffs/Effects data (new tab).
+- Option to sort objects by name only (View->Sort Objects By Name).
+- Holding down Shift while modifying a numerical value will disable all 
+  min/max limits for that field (use with caution; this can potentially crash 
+  the game!).
+- Tech Item dialog allows selection of special multi-unit "Equivalents" (any 
+  Altar, etc.).
+- Ability dialog allows selection of "None" for "Abilities - Default Active 
+  Ability" unit field.
+- New unit fields for tier-based tech tree requirements.
+- Enabled additional abilities for modification:
+      Devour Cargo, Entangled Gold Mine Ability, Load (Entangled Gold Mine), 
+  Poison Sting, Way Gate Ability.
+- Increased maximum number of workers per gold mine to 32 (was 4).
+- Morphing abilities now support different unit types per ability level in the 
+  game.
+- Doodad "tinting color" fields now dynamically displayed based on number of 
+  variations (and they support Auto Fill Levels command).
+- Added various new fields:
+    - Art - Selection Size - Editor (items)
+    - Art - Animation Names (abilities)
+    - Art - Lightning Effects (abilities)
+    - Data - Uprooted Defense Type ("root" abilities)
+    - Stats - Hero - Hide Hero Interface Icon (Hero units)
+    - Stats - Hero - Hide Hero Minimap Display (Hero units)
+
+Import Manager
+- New command for importing all files within a directory (File->Import Files).
+- New command for exporting all files at once (File->Export All Files).
+
+WORLD EDITOR FIXES
+
+General
+- Item Tables dialog is accessible from Unit Properties dialog (ROC only).
+- Pre-placed summoned units count towards creep camp minimap icons.
+- "Extra->Cinematic Arthas" model file reference is invalid.
+- Game lock-up when decreasing level of "Attribute Bonus" ability.
+- Crash when resizing column in Gameplay Constants/Game Interface dialogs too 
+  far to the right.
+- Excessive performance loss when units and start locations overlap.
+- Doodad "fixed height" status is not preserved across undo operations.
+- Setting "Berserker Upgrade" or "Barrage" to researched in Upgrade Properties 
+  disables the corresponding units.
+- Pre-placed random units may have their team color set to red in game, 
+  regardless of owner.
+- Unit Properties dialog does not display mana value for buildings with mana.
+- Moving a start location which is on top of another start location can cause 
+  duplicate start locations.
+- Random Group references used for dropped items are not displayed properly in 
+  the Object Manager.
+- View menu does not always refresh properly after changing layers.
+- Advanced->Adjust Cliff Levels does not adjust water height along with 
+  terrain.
+- Added names for all "unknown" abilities.
+- Using lumber upkeep (via Gameplay Constants) can cause the game to crash on 
+  the scorescreen.
+
+Trigger Editor
+- Unit event "Uses an item" does not fire for items with unlimited charges.
+- Action "Player Group - Set Alliance" ignores the player groups and sets the 
+  alliance for all players.
+- Attempting to enable a trigger does not properly validate that the trigger 
+  script compiles.
+- Action "Game - Show/Hide Custom Campaign Button" fails if game has been 
+  loaded from a saved game.
+- Action "Skip Remaining Actions" can cause compile errors if used as a 
+  parameter to another function.
+- "Event Response - Casting Unit" and "Target Point Of Issued Order" become 
+  reset after a "Wait" action.
+- Invalid sub-functions are not disabled when pasting triggers.
+- Function menu appears in the dialog for setting variable initial values.
+- "Automatically create unknown variables when pasting" option does not work 
+  for "Set Variable" actions.
+- "Edit->Category Is Comment" toggle is not undoable.
+- "Game Cache - Cache Value Exists" fails on Integer value types.
+- Deleting functions may corrupt the strings within other "cut" functions 
+  (manifest after pasting).
+- "Event Response - Learned Skill Level" result is off by one for all levels 
+  greater than one.
+- Variables dialog sorting by Initial Value does not sort properly.
+- Unit-Targeted Order for Drunken Haze uses invalid order string "st.rongdrink" 
+  (should be "drunkenhaze").
+- Map Flag value "Observer chat" is obsolete and causes compile errors.
+
+Sound Editor
+- There is no way to remove imported sounds (TFT can use Import Manager).
+
+Object Editor
+- Default values for ability levels beyond four are not loaded properly in 
+  game.
+- Custom "Required Animation Names" values do not display properly in the 
+  editor (works in game).
+- Character limit on extended tooltip fields too small (was 300, now 1024).
+- Custom values of "Techtree - Requirements - Levels" field are not loaded 
+  properly in game.
+- Maximum value for some ability duration fields is too small (was 300, now 
+  3600).
+- Ability "data" fields do not show up for custom versions of some abilities.
+- Black Arrow data fields list "Damage Bonus" twice. One should be "Summoned 
+  Unit Duration."
+- Unit/item tooltips referencing custom abilities will display as zero in game.
+- Hotkey field not allowed to be empty.
+- Changing an object "category" does not automatically refresh the field list, 
+  if necessary.
+- Maximum value for ability "Stats - Required Level" and "Stats - Level Skip 
+  Requirement" is too small (10).
+- Upgrade "Techtree - Requirements" fields are not loaded properly beyond 
+  level 1 in game.
+- Upgrade effect "Ability Level Bonus" does not recognize custom abilities 
+  in game.
+- Upgrade effect "Ability Level Bonus" does not apply multiple levels to units 
+  created after researching.
+- "Stats - Build Time" values less than 8 cause Heroes to be unable to revive.
+- Extra "data" fields appear for certain Orb abilities.
+- "Stats - Levels" field does not appear for non-Hero abilities (where it can 
+  be valid in some cases).
+- "Stats - Casting Time" and "Stats - Mana Cost" fields do not appear for item 
+  abilities (can be valid).
+- Three upgrade effects are missing appropriate data and UI: 'rtma', 'rart', 
+  'rauv'.
+- Setting Ability or Upgrade race to "Critter" or "Commoner" can crash the 
+  editor.
+- Excessive load times for abilities or upgrades with many levels 
+  (noticeably improved).
+- Improper truncation of ability name displayed with commas.
+- Using 10 Mirror Images will crash the game (max should be 9).
+- Values cannot be set to original default values if the campaign value is 
+  different.
+- Custom doodads/destructibles can be chosen as the base object for a new 
+  custom object (leads to crash).
+- Object tabs do not always refresh properly after importing "all" object data 
+  file.
+- Minimum value for Brilliance Aura "Data - Mana Regeneration Increase" is too 
+  small (was 1, now 0).
+- Maximum value is too small for various ability data fields that can 
+  optionally be used as percentages.
+- Buildings with no pathing map crash the game.
+- Custom abilities based on Locust Swarm do not recognize the "Sound - Effect 
+  Sound (Looping)" field.
+- Unit field "Abilities - Default Active Ability" does not work with custom 
+  abilities.
+- Abilities "Essence of Blight" and "Spirit Touch" should not have mana and hp 
+  related "Data" fields, respectively.
+- "Replenish" and related abilities have a "Stats - Casting Time" field that
+  should read "Data - Maximum Units Affected".
+- "Parasite" and related abilities have a "Stats - Casting Time" field that
+  should read "Data - Summoned Unit Duration".
+- Abilities "Defend" and "Magic Defense" do not apply modifiers properly if 
+  additional levels are learned while they are active.
+- Abilities may display the "editor suffix" corresponding to a different ability.
+- Auto Fill dialog allows any character for hotkey fields.
+- "Art - Scaling Value" is not applied to building placement cursor in game.
+- Pasting "True" values over "False" values does not work.
+
+Campaign Editor
+- Custom campaign objects are not listed in dialogs in the rest of the 
+  Campaign Editor.
+- Custom campaign abilities display every possible "Data" field.
+- User-selected variable difficulty level does not take effect in the game.
+
+AI Editor
+- Food limit displays as 90, even though 100 (or more) is possible.
+- Reloading an already open AI data file does not revert the current data.
+
+NOTES: Replays are incompatible between major game revisions (1.12 replays 
+cannot be viewed with the 1.13 version of Warcraft III). Custom save games 
+will not load from version 1.12.
+
+
+--------------------------------------------------------------------------
+- PATCH 1.12
+--------------------------------------------------------------------------
+
+MISCELLANEOUS FIXES
+
+- Cinematic sequences that were not playing within certain foreign language
+  versions have been fixed. 
+- Fixed problem that enabled you to save games that could not be loaded.
+- Fixed problem that enabled you to create a replay that could not be properly
+  played back.
+
+MAP FIXES
+
+- Rune of Rebirth has been removed from maps (6)GnollWood and (4)Floodplains1v1. 
+- Gold mine positioning has been rebalanced and the starting location tree
+  placement has been improved for the map (2)TwoRivers.
+- A Golem has been added to each of the Mercenary Camps within the map
+  (4)Twisted Meadows.
+- Destructible rocks have been added to the upper and lower gold mine areas
+  in (4)Avalanche.
+
+CREEP FIXES
+
+- The creep version of Inner Fire has had its mana cost increased from 35 to 75.
+- The creep version of Raise Dead has had its cooldown increased from 5 to 12
+  seconds.
+- The creep version of Purge no longer stuns units.
+- The creep version of Abolish Magic has had its mana cost increased from 50
+  to 75.
+
+UNDEAD CHANGES
+
+- Within the Tomb of Relics maximum stock for the Rod of Necromancy has been
+  reduced from 2 to 1.
+
+HUMAN CHANGES
+
+- Aerial Shackles damage has been increased from 20 points per second to
+  30 per second.
+- The gold cost for a Dragonhawk Rider has been reduced from 235/40 to 200/30.
+- Arcane Towers now deal Piercing damage, and have had their range increased
+  from 700 to 800.
+- Animal War Training upgrade cost has been reduced from 150/250 to 125/175.
+- Long Rifles Upgrade now requires a Keep instead of a Workshop.
+
+NIGHT ELF CHANGES
+
+- Spirits of Vengeance (which are summoned by the Avatar of Vengeance) have
+  had their damage increased from 14-18 to 17-21.
+
+ORC CHANGES
+
+- You no longer need a Fortress as a prerequisite to build Batriders.
+- Wind Rider hit points have been reduced from 600 to 570.
+- Burrow armor has been increased from 2 to 5 and damage has been reduced
+  from 1d8+33 to 1d5+22
+
+CLASSIC CHANGES
+
+- Anti-air creeps have been added to each Mercenary Camp in the map
+  (4)Tranquil Paths (Reign of Chaos).
+- Wyvern hit points have been reduced from 600 to 570. 
+- Halls of the Dead and Black Citadel attack cooldown have been reduced
+  from 2.0 to 1.5. 
+- The multiplayer custom map desync that occurs between Reign of Chaos
+  and Frozen Throne players has been fixed.
+
+NOTES: Replays are incompatible between major game revisions (1.11 replays 
+cannot be viewed with the 1.12 version of Warcraft III). Custom save games will 
+not load from version 1.11.
+
+
+--------------------------------------------------------------------------
+- PATCH 1.11
+--------------------------------------------------------------------------
+
+FIXES
+
+- Classic Campaign unit damage has been adjusted to match 1.01 values.
+- Some custom maps would crash because they had pre-1.10 data embedded in them.
+- Czech-only: fixed a crash with the display news items.
+- Fixed a number of text strings within our localized versions. 
+- Fixed a number of hotkeys within our localized versions. 
+
+
+--------------------------------------------------------------------------
+- PATCH 1.10
+--------------------------------------------------------------------------
+
+THE FROZEN THRONE SPECIFICS
+
+FEATURE INFORMATION
+
+- Further information regarding modifying hotkeys can be found in your 
+  Warcraft III installation directory.
+
+MAPS
+
+- Numerous maps have had minor improvements made to them.
+
+BALANCE CHANGES
+
+Human
+- Lumber Mill cost reduced to 120 from 145.
+- Lumber upgrade now gives +10 lumber capacity per level of the upgrade, up 
+  from +5 lumber capacity per level of the upgrade.
+- Human masonry upgrade cost reduced to 100/25, 125/50 and 150/75 from 100/100,
+  125/175, 175/250.
+- Guard Towers and Arcane Towers now cost 70/50 to upgrade, down from 80/60.
+- Mortar Teams now have a limitless supply of flares. However, a particular 
+  Mortar Team can only use a flare once per 2 minutes.
+- Flying Machine damage versus air increased to 12-13 from 7-8.
+- Gryphon Aviary cost changed to 140/150 from 120/240.
+- Gryphon Aviaries now require a Keep instead of a Castle. However, both the
+  Cloud upgrade and Gryphon Riders require a Castle to access.
+- Dragonhawk Riders are now correctly a level 3 unit instead of a level 5 unit. 
+  This only impacts the experience gained when they are killed.
+- Dragonhawk Rider build time reduced to 30 from 45.
+- Spell Breaker hit points reduced to 600 from 650. 
+- Spell Breaker armor type changed to Medium.
+- Mana cost of Spell Steal increased to 75.
+- Scroll of Regeneration now heals 225 hit points over its 45 second duration,
+  up from 150 hit points.
+- Thunder Clap damage reduced to 60/100/140 from 70/110/150.
+- Orb of Fire cost reduced to 375 from 400 and splash radius increased to 140
+  from 125.
+- Priest heal effect increased to 25 hit points per cast, up from 20; Priest 
+  heal mana cost increased to 5 from 4.
+- Sorceress damage increased to 10-12 from 8-10.
+- Powerbuild has been improved. Each additional Peasant contributes 60% of 
+  the speed of the first, up from 50%.
+
+Undead
+- Crypt Fiend damage reduced from 28-33 to 26-31.
+- Burrowed Crypt Fiends now heal 5 hp/sec down from 10 hp/sec.
+- Ghoul hit points upgraded to 340 from 330.
+- Orb of Corruption cost was reduced to 375 from 400, and its armor decrease
+  has gone to 5 from 4.
+- Rod of Necromancy cooldown increased from 15 to 22.
+- Carrion Swarm max damage reduced to 300/600/1000 from 375/700/1000 and
+  damage per target reduced to 75/125/200 from 100/150/200.
+- Impale area of effect width reduced to 250 from 300.
+- Gargoyles now require Halls of the Dead instead of Black Citadel. 
+- Obsidian Statue Spirit Touch now replenishes 4 mana per casting, down from 5.
+- Obsidian Statue Aura of Blight effect reduced to 10 hp/sec from 12 hp/sec.
+- Boneyard cost changed to 175/200 from 125/250.
+- Halls of the Dead and Black Citadel deal one quarter as much damage as
+  previously, but now possess a frost attack similar to that of Nerubian Towers.
+- Nerubian Tower damage reduced to 1d2 + 8 from 1d2 + 10.
+- The Tomb of Relics now sells Dust of Appearance, but no longer sells
+  Lesser Clarity Potions.
+- Devour Magic now heals 50 hit points per spell devoured, up from 25, and
+  restores 75 mana, up from 50.
+- Destroyer damage reduced to 19-21 from 21-24.
+- Frost Wyrm damage increased to 93-115 from 85-105.
+
+Orc
+- Demolisher damage reduced from 82-102 to 76-94.
+- Kodo Beasts are now Unarmored.
+- Raiders now have a base armor of 1, up from 0.
+- Ensnare duration increased to 15 from 12, and range increased to 500 from 400.
+- Shockwave area of effect width reduced to 250 from 300.
+- Chain Lightning base damage reduced to 85/125/180 from 100/140/180.
+- Feral Spirit mana cost reduced to 75 from 100 and cooldown increased to 25
+  from 15.
+- Tauren Chieftain speed increased to 270 from 250.
+- The Tauren Chieftain now has a smaller collision size: 32 down from 48.
+  This means that he takes up less space on the ground.
+- Purge has been improved. It no longer slows friendly units when used on
+  them, and it causes enemies to stop for a brief moment when first cast (in
+  addition to slowing them later).
+- Wind Riders no longer require a Fortress to be built.
+- Wind Rider damage reduced to 36-44 from 39-47.
+- Wind Rider poison now deals 4 damage a second, up from 3.3 damage a second.
+- Wind Rider speed reduced to 320 from 350.
+- Tauren Totem cost changed to 135/155 from 90/200.
+- Orb of Lightning cost reduced to 375 from 400.
+- The Voodoo Lounge now sells Lesser Clarity Potions, but no longer sells Dust
+  of Appearance.
+- Spirit Link mana cost reduced to 75 from 100.
+- Mirror Image cost reduced to 125 from 150.
+- Blademaster's base Agility increased to 24 from 23.
+
+Night Elf
+- Entangle duration versus Heroes reduced to 3/4/5 from 3/5/7.
+- Fan of Knives maximum damage reduced to 300/625/950 from 350/675/950, and
+  damage per target reduced to 75/120/180 from 90/135/180.
+- Chimaera splash increments reduced by 50 for quarter, 25 for half. This
+  effectively means that Chimaeras will do less splash damage than previously.
+- Mana Flare has had a bug fixed that was preventing multiple Mana Flares from
+  attacking multiple targets at the same time. As a result, Mana Flare has
+  been rebalanced, and deals up to 90 damage to targets in a 250 area when a
+  unit casts a spell, down from 125 damage.
+- Archer hit points reduced to 240 from 310.
+- Archers now have a new passive ability, Elune's Grace. This ability grants
+  them 35% damage reduction against Piercing attacks, and 20% damage reduction
+  against spells.
+- Hippogryph Rider hit points decreased to 765 from 835 and armor increased to
+  1 from 0.
+- Dryad damage increased from 15-17 to 16-18.
+- Mountain Giant base armor increased to 4 from 0 and hit points increased to
+  1600 from 1400.
+- Hardened Skin upgrade cost reduced to 100/175 from 100/250, and damage
+  reduction reduced to 12 from 15.
+- Chimaera Roost cost changed to 140/190 from 100/230.
+- Orb of Venom cost reduced to 375 from 400 and poison damage/sec increased
+  to 7 from 6.
+
+Neutral Buildings, Units, and Heroes
+- Forked Lightning damage reduced to 85/160/250 from 100/175/250.
+- Tornado now deals 7 damage a second to buildings in its general vicinity
+  (down from 10) and 50 damage to buildings it is over (down from 80), and
+  it now costs 250 mana to cast, up from 150. 
+- Silence area of effect increased from 150/250/350 to 200/275/350. 
+- Mercenaries cost 25% more gold than previously.
+- Mud Golem availability delayed to second day.
+- Summoned Doom Guard hit points increased to 1600 from 1350.
+- Howl of Terror % damage reduction increased by 5% at all levels.
+- Zeppelin hit points increased to 575 from 500.
+- Forest Troll Shadow Priests have had their starting availability delayed
+  by 60 seconds to 120 seconds.
+- The Beastmaster now has a smaller collision size: 32 down from 48.
+  This means that he takes up less space on the ground.
+
+Items
+- Scroll of Restoration is now a level 5 item instead of a level 6 item.
+
+Other
+- Town Portal now takes 5 seconds to activate, up from 3.
+- Units killed in a transport will "spill out" over a wider area. This means
+  that surrounding a webbed transport and killing it will generally not kill
+  the passengers.
+- Tavern instant revive costs three times more lumber than previously.
+- Heroes revived at the Tavern now are brought back to life with 0 mana and
+  50% health.
+- Tier 3 town halls all cost 20 lumber and 20 gold less.
+- At tiers 2 and 3, a player who owns only one Hero (dead Heroes count) will
+  gain bonus experience. This bonus is 10% at tier 2, and 20% at tier 3.
+  This affects all experience gain--both from killing creeps and enemy units.
+
+REIGN OF CHAOS SPECIFICS
+
+MAPS
+
+- All multiplayer maps that were shipped with the original product have
+  been patched to have improved item drop tables. 
+- Some maps have been additionally improved with other minor enhancements.
+- Tranquil Paths now has random creeps.
+
+BALANCE CHANGES
+
+Humans
+- Devotion Aura now gives 1.5/3/4.5 armor per level.
+- Powerbuild effectiveness has been reduced to 60% of its previous strength 
+  in terms of how much speed additional Peasants add when supporting the 
+  construction of a building. Note that the cost increase per additional
+  Peasant is unchanged.
+- Thunder Clap damage reduced to 60/100/140 from 70/110/150.
+- Gyrocopter damage increased to 27-32 from 25-30.
+
+Undead
+- Shade speed increased to 350 from 270, but hit points reduced to 125
+  from 250.
+- Animate Dead's duration reduced to 40 from 120, cooldown reduced from
+  180 to 240. Additionally, animated units are invulnerable, but can
+  still be dispelled.
+- Death Pact and Dark Ritual can now be used on invulnerable units.
+- Carrion Swarm max damage reduced to 300/600/1000 from 375/700/1000 and
+  damage per target reduced to 75/125/200 from 100/150/200.
+- Halls of the Dead and Black Citadel attack cooldown is now 2 seconds 
+  up from 1 second, and their damage has been reduced by 33% as well
+- Gargoyle attack versus air decreased to 1d11 + 43 from 1d13 + 50 to 
+  reflect new air pathing changes.
+
+Orcs
+- Wind Walk now has a cooldown of 5 seconds, costs 75 mana at all levels
+  (changed from 100/75/25), and deals "backstab" damage. When a Blademaster
+  attacks while using Wind Walk, he deals bonus damage to his victim.
+- Lightning Shield range increased to 600 from 500.
+- Ensnare duration increased to 15 from 12, and range increased to 500
+  from 400.
+- Feral Spirit mana cost reduced to 75 from 100 and cooldown increased to
+  25 from 15.
+- Shockwave area of effect width reduced to 250 from 300.
+- Chain Lightning base damage reduced to 85/125/180 from 100/140/180.
+- Tauren Chieftain speed increased to 270 from 250.
+- The Tauren Chieftain now has a smaller collision size: 32 down from 48.
+  This means that he takes up less space on the ground.
+- Wyvern hit points increased to 600 from 500.
+- Wyvern poison now lasts 25 seconds and deals 4 damage a second.
+- Headhunter cooldown reduced to 2.26 from 2.34. 
+- Berserker Strength now requires a Stronghold instead of a Fortress.
+- Mirror Image cost reduced to 125 from 150.
+
+Night Elves
+- Dryad damage increased from 15-17 to 16-18.
+- Entangle now prevents an affected unit from attacking, and interrupts
+  channeling spells such as Blizzard and Starfall. However, its duration
+  has been reduced to 12(3)/24(4)/36(5) (unit(Hero)).
+- Treants created by Force of Nature now benefit from the Nature's Blessing
+  upgrade.
+- Mana Burn cooldown is now 7/6/5 seconds by level, down from 7/7/7 seconds
+  by level.
+- Tranquility cooldown reduced to 60 from 120.
+- Tranquility mana cost reduced to 125 from 200.
+- Cyclone no longer affects mechanical units.
+- Rejuvenation can now be cast on units at full health.
+- Ancients now attack while rooted.
+- Hippogryph attack decreased from 1d9 + 37 to 1d7 + 31 to reflect new 
+  air pathing changes.
+- Chimaera splash increments reduced by 50 for quarter, 25 for half. This
+  effectively means that Chimaeras will do less splash damage than previously.
+
+Items
+- Items have been revamped with new level tables. Items now have a level
+  from 1 to 8, along with one of several categories. Items of levels 1 to 6
+  can be charged items, permanent items, or powerups. Items of level 7 or
+  higher are artifacts. 
+  Examples: Wand of Lightning Shield (charged), Stone Token (charged), Ring
+  of Protection +2 (permanent), Tome of Strength +2 (powerup), Mask of Death
+  (artifact).
+- You can now sell items at the Goblin Merchant by right-clicking on an item,
+  and then "dropping" it onto a Goblin Merchant.
+- Scroll of Town Portal now takes 5 seconds to use. During this time it is
+  being "channeled", and the Hero using it cannot be attacked or stunned.
+  Under no circumstances can the town portal be aborted once started. 
+- Wand of Illusion can no longer be cast on hostile units. This change was
+  made to prevent players from cheesing high level creep camps by using Wand
+  of Illusion on high level creeps, and then using this illusionary creep to
+  tank the damage.
+- Boots of Speed no longer stack: two Boots of Speed will make a Hero just
+  as fast as one.
+
+Other
+- When "attack-moving", air units now prefer to attack other air units more
+  often than previously.
+- Creeps that are not in combat now ignore flying units. This means that if
+  you move flying units around using "move" instead of "attack move", creeps
+  will generally not attack them.
+- Creeps can no longer be dragged via constant attacks--they eventually give
+  up and return to their start location. 
+- Goblin Sappers now deal 750 damage to buildings, 250 damage to all units,
+  and 185 damage to Heroes. These values are reduced by armor values such as
+  '5 armor', but do not interact with armor types (e.g. 'Medium armor').
+- Units in a transport over ground will "spill out" over a wider area. This
+  means that surrounding a webbed transport and killing it will generally
+  not kill the passengers.
+
+NOTES: Replays are incompatible between major game revisions. (1.07 replays 
+cannot be viewed with the 1.10 version of Warcraft III.) Custom save games will 
+not load from version 1.07.
+
+
+--------------------------------------------------------------------------
+- PATCH 1.06
+--------------------------------------------------------------------------
+
+BALANCE CHANGES
+
+Improved Counterability
+	   Unarmored   Light   Medium   Heavy   Fortified   Hero
+Normal	     100%	150%	100%	 100%	    50%	    100%
+Piercing     150%	 75%	100%	 150%	    35%	     50%
+Siege	     150%	 50%	100%	 100%	   150%	     50%
+Magic	      75%	100%	200%	 100%	    50%	     50%
+Hero	     100%	100%	100%	 100%	    50%	    100%
+
+You can find further information related to armor and damage types on our 
+web site at http://www.battle.net/war3/basics/armorandweapontypes.shtml
+
+Spellcaster Rebalance
+- Most spellcasters (Sorceress, Priest, Shaman, Witch Doctor, Necromancer, 
+  Banshee, Druid of the Talon) have been re-balanced. In general, units 
+  with piercing damage rip up spellcasters, while basic melee units, such 
+  as Ghouls or Footmen, are weak against spellcasters. The specific 
+  changes to the units in question are:
+  * They have a new armor type, unarmored, which takes bonus damage from 
+    siege and piercing attacks.  
+  * They also have a new damage type, magic, which does reduced damage to 
+    fortified and hero armor, but does bonus damage against medium armor.
+  * They had their damage adjusted, typically downwards.
+  * They no longer gain damage as they go up in level, and gain less 
+    hitpoints as they go up in level (but start with more hitpoints when 
+    initially built)
+  * Many autocast buffs and debuff costs reduced.
+  * Casters, including Dryads, have had their mana regeneration rates 
+    boosted by 30%.
+
+Hero Damage
+- Heroes now have an aptly named hero damage type. It deals 100% damage
+  to everything except fortified armor, to which it deals 50% damage. Hero 
+  damage was added so that heroes no longer strongly counter ranged units 
+  such as Archers and Crypt Fiends.
+
+Advanced Structures 
+- Most advanced technology structures had their build times reduced. This 
+  reduction ranged from 20 seconds for especially underused structures, to 
+  10 seconds for less underused structures. For instance, the Slaughterhouse 
+  builds 20 seconds faster now, while the Arcane Sanctum build time was only 
+  reduced 10 seconds.
+
+Humans
+- Flares now cost 75/25 to research, down from 100/50.
+- Inner Fire cost increased to 35, from 25.
+- Slow cost reduced to 40 from 50.
+- Slow duration vs heroes reduced to 10 seconds from 20 seconds.
+- Thunderclap debuff is 50% at all levels, and lasts 5/3 at all levels.
+
+Undead
+- Curse now causes a 33% chance to miss, up from 25%.  
+- Curse now lasts 2 minutes, up from 1 minute.
+- Curse cost reduced to 40 mana from 50.
+- Web lasts 12 seconds, down from 20 seconds, and has a cooldown of 12 
+  seconds, down from 20 seconds.
+- Carrion Swarm max damage increased to 375/700/1000 from 300/550/800.
+- Carrion Swarm no longer hits wards.
+- Boneyard cost reduced to 250/100 from 350/125.
+- Acolytes now have 220 health, up from 180.
+- Necropolis cost reduced to 300 gold, down from 350 gold.
+- Black Citadel now has 2000 hitpoints, down from 2300.
+- Halls of the Dead now has 1750 hitpoints, down from 2000.
+
+Orcs
+- Bloodlust cost reduced from 50 mana to 40 mana.
+- Raiders now have light armor instead of heavy armor. 
+- Raider Ensnare lasts 12 seconds, down from 20 seconds, and has a cooldown 
+  of 12 seconds, down from 20 seconds.
+- Bladestorm cooldown reduced to 3 minutes, down from 4 minutes.
+
+Night Elves
+- Cyclone duration on units increased to 15 from 10.
+- Faerie Fire cost reduced to 35 from 75.
+- Chimaera Roost cost reduced to 230/70 from 280/100
+- Ancients temporarily lose their fortified armor when they uproot, 
+  becoming medium armor units.
+- Dryads now have the unarmored armor type. This change was made to 
+  further specialize Dryads as melee killers, but allow piercing damage 
+  units, such as Crypt Fiends and Archers, to counter them more 
+  effectively.
+- Dryad hitpoints increased to 435 from 380.
+
+Other
+- All basic siege units (Mortar Teams, Catapults, etc.) have had their night 
+  sight increased to 1100 from 1000.
+
+Creeps
+- Creep-cast Polymorph duration reduced to 25.
+- Creep autocast Heal heals 12 hp a cast not 15.
+- Lightning Lizards, Thunder Lizards and Storm Wyrms no longer friendly 
+  fire - their attacks only hit hostile targets. 
+- Lightning Lizard damage reduced from 1d8 + 16 to 1d8 + 14
+- Thunder Lizard damage reduced from 1d11+30 to 1d8+26.
+- Centaur Impaler hitpoints reduced to 350 from 450.
+
+Items
+- Anhk of Reincarnation is now a level 7 item.
+- Potion of Restoration now heals 500 health and 200 mana, rather than fully 
+  replenishing a hero's health and mana. 
+- Scroll of Restoration now heals 300 health and 150 mana, rather than fully 
+  replenishing all targets health and mana.
+- Tome of Experience is now a level 5 item
+- Scroll of Protection cost reduced to 150
+
+NOTES: Replays are incompatible between major game revisions (1.05 replays 
+cannot be viewed with the 1.06 version of Warcraft III).
+
+--------------------------------------------------------------------------
+- PATCH 1.05
+--------------------------------------------------------------------------
+
+FIXES
+
+- Fixed a problem with viewing certain replays.
+
+--------------------------------------------------------------------------
+- PATCH 1.04c
+--------------------------------------------------------------------------
+
+FIXES
+
+- Dates now use the system date format.
+- Fixed some issues related to IME text input.
+- Fixed some minor text wrapping issues that were occurring with Asian languages.
+- Fixed an issue that allowed players to keep Castles and Keeps alive for 
+  abnormal lengths of time while those buildings were under attack.    
+
+--------------------------------------------------------------------------
+- PATCH 1.04
+--------------------------------------------------------------------------
+
+FIXES
+
+- Fixed an issue related to full shared unit control and allied play that could 
+  cause one or more players to lose the ability to train or upgrade their own 
+  units.
+- Fixed an issue that caused the experience point bars in Battle.net profiles 
+  to improperly reflect recently gained or lost points.
+- Fixed a graphic issue related to the ladder profile and the scroll bar.
+
+BALANCE CHANGES
+
+Humans
+- Divine Shield duration increased to 15/30/45 from 10/20/30.
+- Divine Shield cooldown changed to 35/50/65 from 60/60/60.
+- Avatar cooldown increased to 180 from 120.
+- Resurrection mana cost reduced to 200 from 250.
+- Sorceress acquisition range increased to 700 from 600, improving the 
+  frequency with which Slow is auto-cast.
+
+Undead
+- Banshee acquisition range increased to 700 from 500, improving the frequency 
+  with which Curse is auto-cast.
+- Anti-magic Shell is once again dispellable. A summoned unit under a shell 
+  does not take damage from the dispel, but will lose the shell.
+- Anti-magic Shell mana cost reduced to 50 from 75.
+- Sleep duration decreased on Hero units to 5/10/15 from 10/20/30.
+- Web duration decreased on Hero units to 7 from 20.
+- Animate Dead mana cost reduced to 250 from 300.
+- Player-controlled Ghouls no longer turn off pathing against units when they 
+  are instructed to harvest lumber.
+- Possession now takes 1 second to cast, up from 0.
+
+Orcs
+- Wards are no longer hit by Huntress Moon Glaive bounce.
+- Critical Strike no longer receives damage from Thorns Aura. However, the
+  Blademaster's base attack associated with a Critical Strike still interacts
+  with Thorns appropriately.
+
+Night Elves
+- Thorns no longer interacts with Critical Strike.
+- Mana Burn mana cost reduced to 50 from 75.
+- Mana Burn drain amount reduced to 50/100/150 from 100/200/300.
+- Mana Burn cooldown reduced to 7 from 9.
+- Huntress damage reduced to 1d3+14 from 1d3+15.
+- Metamorphosis cooldown increased to 180 from 120.
+- Cyclone duration reduced to 10/5.5 from 30/6 (normal unit/Hero units).
+- Starfall cooldown increased to 180 from 120.
+- Druid of the Talon (in Night Elf form) acquisition range increased to 700 
+  from 600, improving the frequency with which Faerie Fire is auto-cast.
+- Ballista Impaling Bolt no longer functions with "Attack Ground."
+- Ancient Protector cost reduced to 160/80 from 240/100.
+- Ancient Protector hit points increased to 600 from 550.
+- Ancient Protector armor decreased to 1 from 2.
+- Ancient Protector minimum range reduced to 0 from 200.
+- Ancient Protector ranged attack damage reduced to 1d10+44 from 1d13+51.
+- Ancient Protector damage type changed to pierce from siege.
+- Ancient Protector splash damage reduced.
+
+Creeps
+- Murloc Mutant damage increased to 1d5+24 from 1d2+12.
+
+MAP CHANGES
+
+- Many minor changes were made to many maps due to the balance changes made in 
+  patch 1.03 and patch 1.04. Some examples include:
+   (4) Lost Temple - Added more shallow water to the islands. Center creep camp 
+       is a bit harder. Added Ogre Magi to the corner Ogre creep camps.
+   (6) Moonglade - Reduced all creep camps approximately 2 levels.
+   (8) The Crucible - All start locations should now be very similar, close to 
+       trees with enough room to build. All Goblin Merchant creep camps are 
+       now farther off the main path.
+  (10) Dustwallow Keys - Fixed the choke point in the bottom left. Moved 
+       Razormane creeps off the main paths.
+  (12) Ice Crown - Fixed the creep levels so that all camps are equal.
+
+NOTES: Replays are incompatible between major game revisions. (1.03 replays 
+cannot be viewed with the 1.04 version of Warcraft III.) Custom save games will 
+not load from versions 1.03 and below.
+
+
+--------------------------------------------------------------------------
+- PATCH 1.03
+--------------------------------------------------------------------------
+
+NEW FEATURES
+
+- Each AI player can now be set to one of three different settings: 
+  Easy, Normal, and Insane.
+- Allied AI will teleport to human allies' towns when the towns are under 
+  attack.
+- Allied AI will ping the minimap to indicate where they are going to attack 
+  next.
+- Messages can now be sent when the "Waiting for Players" dialog is up.
+- Added PowerPC optimizations and MacOS X 10.2 specific acceleration to the 
+  graphics engine.
+
+FIXES
+
+- Fixed an issue with building reimbursement that could credit a player twice 
+  for canceling a building.
+- Fixed a crash that could occur when the system date was set to > 2038.
+- Fixed map loading crash that could result from custom units that sell too 
+  many items.
+- Fixed crash with Avance Sound cards. The fix requires a minor change to your 
+  registry. If you are experiencing this problem, please contact our technical 
+  support staff. 
+- Fixed a crash that could occur when loading a corrupted save file.
+- Fixed a crash that could occur on custom maps during some unit creation 
+  events.
+- Fixed an issue causing localized versions of maps to be passed unnecessar-
+  ily.
+- Fixed Mass Teleport crash that could result from a target unit's dying 
+  before spell completes.
+- Fixed save/load map interaction that could result in an unresponsive game.
+- Fixed an issue related to unit selection and upgrading Human towers.
+- Fixed an issue with Dreadlord that could cause him to not take damage 
+  from Unholy Frenzy if he had the Sleep skill.
+- Fixed some AI mining issues that could occur when their original town 
+  hall was destroyed.
+- Fixed an AMM chat message bug that could disconnect you if an AMM team 
+  game message was sent just before game launch.
+- Fixed an issue that allowed players to save after choosing "Continue" in a 
+  single-player mission.
+- Fixed a supply issue related to the Demon Hunter and his Metamorphosis 
+  ability.
+- Fixed Zeppelin drop exploit as a method of building locating through fog 
+  of war.
+- Fixed an issue with saving while "Waiting for Players" dialog was up that 
+  could result in a soft lock.
+- Fixed an issue that could create an invincible Mountain King.
+- Fixed an issue related to graphical display of auras from aura-generating 
+  items.
+- Fixed an issue with Anti-magic Shell so it now properly interacts with 
+  magic-immune and non-magic-immune summoned units.
+- Fixed disappearance of Sentinel owl in conjunction w/ AOE-targeting 
+  circle. 
+- Fixed an issue with Huntress' bouncing missile that would allow it to hit 
+  a secondary target even if it missed the primary target.
+- Fixed an issue with rooted Ancients that would cause them to trigger 
+  Goblin Land Mines.
+- Fixed an issue related to Hero illusions' carrying a Ring of Protection.
+- Fixed an issue with Town Portal spell art.
+- Fixed an issue with hit point/mana upgrades and Polymorph.
+- Fixed an issue with the Abolish Magic ability and allies.
+- Fixed an issue with poison that could kill a unit. Poison, by itself, 
+  should only take a unit to the brink of death.
+- Fixed an issue related to the interaction of Shift-adding units to a group 
+  and unit deaths.
+- Fixed an issue related to replays, selection circles, and changing player 
+  perspective.
+- Fixed an issue with Cyclone and moving units creating aerial footprints.
+- Fixed keyboard screen scroll and "Waiting for Players" interaction.
+- Fixed several minor text and tooltip issues.
+- Fixed a few improper combat sound assignments on creeps and NPCs.
+- Frost Wyrm attack now also slows air units.
+- AI Keepers of the Grove no longer cast Force of Nature on different cliff 
+  levels.
+- Night Elf AI now uses the Wisp's Renew ability effectively.
+- Disease (Plague) and poison no longer wake sleeping units.
+- Moon Glaive bounce no longer hits invisible units.
+- Demon Hunter's attack while in Demon Form no longer damages self or allies.
+- Upgraded building shadows no longer update through the fog of war.
+- Necklace of Spell Immunity no longer drops a Blademaster's Wind Walk.
+- Observers no longer gain full player UI when entering a loaded game.
+- Observers no longer get gold/lumber/supply UI when selecting neutral 
+  buildings.
+- Fog of war updates properly now if you are alt-tabbed out of game.
+- War3 now warns you when you save game or screenshot or profile if there's 
+  not enough available disk space.
+- Improved "We're Under Attack" messages so they trigger at more appropriate 
+  times.
+
+WORLD EDITOR FIXES
+
+- Fixed Macintosh World Editor crash.
+- Added Unit Editor field for building upgrades.
+- Increased number of possible dialog buttons from 5 to 12.
+- Added blank entries for all units that don't normally have abilities or 
+  attacks, allowing a user to potentially add these through the Unit Editor.
+- Added Unit Editor field to set unit sounds to that of another unit type.
+- Reorganized limits on pre-placed neutral units.  Neutral hostile 
+  buildings now count towards the "unit" limit of 512, and only passive 
+  buildings count towards the "building" limit of 96.
+- Fixed bug where map auto-save could bypass object limit checks.
+- Fixed Sound Editor bug that would sometimes delete an imported sound file 
+  from the map if it was imported from outside the War3 directory and the 
+  Test Map feature was used before the map was saved.
+- Fixed force issue that would cause Force 11 when you selected Force 10 
+  for a trigger in the editor.
+
+BALANCE CHANGES
+
+Humans
+- Brilliance Aura has been reworked, and is no longer % based.  It now adds 
+  a fixed amount of mana per second to units under its power -- .75, 1.5, 
+  and 2.25 respectively by level. While it's just as effective with mass spell-
+  casters, players will find it is less powerful (though still exceedingly 
+  useful) with Heroes.
+- Divine Shield now costs 25 mana, down from 75.
+- Blizzard no longer goes up in radius as the level of the ability increases.
+- Water elementals now last 60 seconds, down from 75.
+
+Undead
+- Gargoyles' ground attack was substantially upgraded.  They now do 21-24 
+  damage, up from 16-18 damage. They also have less armor (3, down from 5), 
+  but also hit harder against air units, doing 51-63 damage, up from 46-57 
+  damage.  Note that they are still just as effective against air units as 
+  they were before, but their ground attack has been much improved.
+- Death Pact now costs 50 mana (down from 75), and can be cast twice as 
+  frequently as before (15 seconds cooldown from 30).
+- Lich Heroes now have far more hit points, as they now have 15 str + 2/level, 
+  up from 13 + 1.6/level.
+- Frost Armor is now an auto-cast spell which will target units under attack 
+  if auto-casting is enabled.  Frost Armor also costs less mana -- 40 down 
+  from 50.
+- The Spirit Tower Upgrade now costs 160/40, up from 120/40.
+- Crypt Fiends' attack was slightly improved.
+
+Orcs
+- Headhunters have more hit points (350, up from 280), but also strike more 
+  slowly.
+- Stasis Trap no longer stuns friendly units, but has a shorter duration 
+  (6 seconds, down from 12 seconds).  Stasis Traps, when they are set off,
+  also destroy other Stasis Traps within their area of effect.
+- Kodo Beasts now have 1000 hit points, up from 790 hit points.  They also 
+  attack more slowly than before.
+- Orc Barracks cost less lumber: 50, down from 70.
+- Watch Towers now do 16-18 damage, down from 19-22 damage.
+- Grunts now have 700 hit points, up 20 from 680.
+- Shaman's attack is far less powerful.  They attack somewhat more slowly, 
+  and also do 11-12 damage, down from 14-16 damage.
+- Stasis Ward and Sentry Ward no longer inhibit movement or building 
+  construction.
+
+Night Elves
+- Sentinel can now be removed from a tree with various dispels (Wand of 
+  Negation, Dryads, etc.), as well by attacking the tree with a peon or siege 
+  unit (previously, the tree had to be destroyed -- now it merely has to be 
+  damaged).
+- Mana Burn no longer affects units with Mana Burn (Demon Hunters, Satyr 
+  Soulstealers, Felhounds, etc.).
+- Thorns is now a %-based ability that reflects 10%, 20% or 30% of melee 
+  damage dealt by level.
+- Wisp's sight radius increased by 25%.
+- Detonate now does 225 damage against summoned creatures, up from 150.
+- Non-tree buildings now have 5 armor, up from 2.
+- Ballistae now have an "Attack Ground" command.
+- Force of Nature cooldown reduced to 20 seconds, down from 30 seconds.
+- Treants now last 60 seconds, down from 75 seconds.
+- Eating trees now gives a constant, non-stacking healing effect for 10 
+  seconds.
+- Moon Wells now spend mana on health and mana replenishment separately. For 
+  instance, if you sent a 0-mana, nearly dead Demon Hunter to a Moon Well, 
+  and the Moon Well had 100 mana, your DH would gain 25 mana, and 100 health. 
+  Before, the Hero would gain 200 health and 50 mana. This change does not 
+  affect the benefits of healing a unit without mana.
+
+Creeps
+- All melee creeps in between levels 1 and 5 are slightly more powerful.
+- All creeps of level 6 or higher now have Hero magic resistance.
+- Creeps of level 7 or higher will behave more intelligently in general.
+- All creeps of level 7 or higher now deal Chaos damage.
+- Level 10 Dragons no longer have spell immunity.
+- Many minor creep balance tweaks to damage and abilities.
+- Mercenaries are now more accurately priced in general, which in most 
+  cases amounts to price decreases.
+
+Items
+- Scepter of Mastery no longer will drop randomly in multiplayer maps. 
+- Tome of Power, Mask of Death both increased in level (8 to 9 and 8 to 10 
+  respectively).
+- Wand of Lightning Shield is now a level-3 item, down from level 6.
+- Sentry Ward item now comes with 3 charges, down from 5.
+- Periapt of Vitality now gives 150 hps, up from 100.
+- Pendant of Mana now gives 250 mana, down from 300.
+- Tome of Experience now gives Heroes 150 experience points, down from 200.
+
+NOTE: Replays are incompatible between major game revisions. (1.02 replays 
+cannot be viewed with the 1.03 version of Warcraft III.)
+
+
+--------------------------------------------------------------------------
+- PATCH 1.02a
+--------------------------------------------------------------------------
+
+- Added localized Battle.net messages.
+
+
+--------------------------------------------------------------------------
+- PATCH 1.02
+--------------------------------------------------------------------------
+
+FIXES
+
+- Fixed an issue that allowed players to abuse dragons with Devour.
+- Fixed an issue with dragons that could cause them to divert attacks.
+
+BALANCE CHANGES
+
+- Necklace of Immunity, Tome of Greater Experience, and Goblin Land Mines 
+  no longer randomly drop in multiplayer games.
+- Scroll of Resurrection & Scroll of Animate Dead item level increased.
+- Bridges are no longer destroyable on the (6)Stromguarde.w3m map.
+
+NOTE: Replays are incompatible between major game revisions. (1.01 replays 
+cannot be viewed with the 1.02 version of Warcraft III.)
+
+
+--------------------------------------------------------------------------
+- PATCH 1.01c
+--------------------------------------------------------------------------
+
+- Fixed an issue with copy protection for certain DVD drives.
+
+
+--------------------------------------------------------------------------
+- PATCH 1.01b
+--------------------------------------------------------------------------
+- Fixed a problem where players were disconnected from a game as it was
+  starting and thus getting a loss.
+
+
+--------------------------------------------------------------------------
+- PATCH 1.01
+--------------------------------------------------------------------------
+
+** Welcome to Warcraft III and improved Battle.net! **
+
+This patch contains various data and code updates necessary for play on 
+Battle.net as well as some minor balance changes.
